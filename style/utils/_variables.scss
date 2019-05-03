@@ -1,8 +1,8 @@
 /* main colors */
 $white-color     : #fff !default;
 $dark-color      : #000 !default;
-$primary-color   : #43c1a8 !default;
-$secondary-color : #b9db27 !default;
+$primary-color   : #541079 !default;
+$secondary-color : #1cb4fc !default;
 
 /* main fonts */
 $base-font-size       : 10px !default;
@@ -14,3 +14,6 @@ $xl-width: 1200px !default;
 $lg-width: 992px !default;
 $md-width: 768px !default;
 $sm-width: 560px !default;
+
+/*font awesome*/
+$fa-font-path:        "../fontawesome/webfonts";

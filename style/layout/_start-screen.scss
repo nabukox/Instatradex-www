@@ -19,7 +19,7 @@
 		flex-wrap: wrap;
 		align-items: stretch;
 		width: 100%;
-		min-height: 100vh;
+		min-height: 20vh;
 		padding-top: 80px;
 		@extend %bg-cover;
 
@@ -422,7 +422,7 @@
 
 .start-screen__slider
 {
-	.start-screen__content__inner { min-height: 600px; }
+	.start-screen__content__inner { min-height: 500px; }
 
 	.slick-dots
 	{
