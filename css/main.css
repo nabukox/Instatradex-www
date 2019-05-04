@@ -7068,3 +7068,10 @@ label {
 
 .cuadro_mining {
   background-image: url("../img/bg_mining.png"); }
+
+/*bloque video*/
+.__play-btn {
+  background-color: #fc6666 !important; }
+
+.video-container {
+  margin-top: 0; }

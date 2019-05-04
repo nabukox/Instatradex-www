@@ -174,7 +174,7 @@
 							<div class="col hide--md col-MB-40"></div>
 	
 							<div class="col col--md-7 col--lg-6">
-								<div class="content-grid ">
+								<div class="content-grid " style="max-width:40em">
 									<div data-aos="fade-right" data-aos-delay="150" class="aos-init aos-animate">
 										<div class="section-heading  col-MB-30">
 											<h2 class="__title">InstaTradex Success</h2>
@@ -239,10 +239,10 @@
 					}
 				</style>
 
-				<!-- start feature -->
+				<!-- start feature CUADROS-->
 				<div class="feature feature--style-1  text--center text--sm-left cuadros_features">
 					<div class="row row--no-gutters">
-						<!-- start item -->
+						<!-- start item CUADRO 1-->
 						<div class="col col--no-gutters col--sm-6 col--lg-4 col--sm-flex ">
 							<div class="__item  __item--first cuadro_blockchain" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="0">
 								<div class="__content">
@@ -258,9 +258,9 @@
 								</div>
 							</div>
 						</div>
-						<!-- end item -->
+						<!-- end item finalCUADRO 1-->
 
-						<!-- start item -->
+						<!-- start item CUADRO 2-->
 						<div class="col col--no-gutters col--sm-6 col--lg-4 col--sm-flex">
 							<div class="__item  __item--second cuadro_bitcoin" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
 								<div class="__content">
@@ -276,9 +276,9 @@
 								</div>
 							</div>
 						</div>
-						<!-- end item -->
+						<!-- end item final CUADRO 2-->
 
-						<!-- start item -->
+						<!-- start item CUADRO 3-->
 						<div class="col col--no-gutters col--sm-6 col--lg-4 col--sm-flex">
 							<div class="__item  __item--third cuadro_mining" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="300">
 								<div class="__content">
@@ -294,7 +294,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- end item -->
+						<!-- end item final CUADRO 3-->
 					</div>
 				</div>
 				<!-- end feature -->
@@ -304,116 +304,38 @@
 			<!-- start section -->
 			<section class="section">
 				<div class="grid grid--container">
-					<div class="section-heading section-heading--center  col-MB-60">
-						<h5 class="__subtitle">Popular Cryptocarrency prices</h5>
+					<div class="section-heading section-heading--center  ">
+						<h5 class="__subtitle">How it Works</h5>
 
-						<h2 class="__title">Cryptocurrency Prices</h2>
+						<h2 class="__title">Circle of Profits</h2>
 					</div>
 
-					<div style="width:100%;position:relative;">
-						<canvas id="canvas_00001" width="100%"></canvas>
-
-						<script type="text/javascript">
-							(function()
-							{
-								var randomScalingFactor = function() {
-									return Math.round(Math.random() * 100);
-								};
-
-								var oInterval = setInterval(function ()
-								{
-									if (typeof window.jQuery !== 'undefined' && window.Chart !== 'undefined')
-									{
-										clearInterval(oInterval);
-
-										var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-										var config = {
-											type: 'line',
-											data: {
-												labels: MONTHS,
-												datasets: [{
-													label: 'Bitcoin',
-													backgroundColor: 'rgba(235, 246, 236, 0.4)',
-													borderColor: '#00ab40',
-													fill: true,
-													borderWidth: 2,
-													data: [
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor()
-													],
-												}, {
-													label: 'Ethereum',
-													backgroundColor: 'rgba(216, 234, 228, 0.4)',
-													borderColor: '#0085a2',
-													fill: true,
-													borderWidth: 2,
-													data: [
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor(),
-														randomScalingFactor()
-													],
-												}]
-											},
-											options: {
-												responsive: true,
-												title: {
-													display: true,
-													text: 'Cryptocurrency Prices',
-												},
-												tooltips: {
-													mode: 'index',
-													intersect: false,
-												},
-												hover: {
-													mode: 'nearest',
-													intersect: true
-												},
-												scales: {
-													xAxes: [{
-														display: true,
-														scaleLabel: {
-															display: true,
-															labelString: 'Month'
-														}
-													}],
-													yAxes: [{
-														display: true,
-														scaleLabel: {
-															display: true,
-															labelString: 'Price, $'
-														}
-													}]
-												}
-											}
-										};
-
-										window.onload = function() {
-											
-										};
-
-										jQuery(document).ready(function($){
-
-											var ctx = document.getElementById('canvas_00001').getContext('2d');
-											window.myLine = new Chart(ctx, config);
-										});
-									}
-								}, 500);
-							})();
-						</script>
-					</div>
 				</div>
+
+					<!-- start video -->
+					<div class="video-container " data-aos="fade-up">
+						<img class="img-responsive center-block lazy" src="img/blank.gif" data-src="img/circleOfProfits.jpg" alt="demo" />
+
+						<div class="__video" style="max-width: 300px;">
+							<div class="__wrp">
+								<div class="embed-responsive">
+									<div class="__bg embed-responsive-item">
+										<div class="__btn_wrp">
+											<a class="__play-btn  circled" ></a>
+
+											<span class="__desc" style="color: #333"> </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end video -->
+
 			</section>
 			<!-- end section -->
+
+			
 
 			<!-- start section -->
 			<section class="section section--light-blue-bg">
