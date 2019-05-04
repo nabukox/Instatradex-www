@@ -7039,3 +7039,32 @@ label {
     margin-bottom: 90px; }
   .section--custom-01 .img-wrap {
     margin-left: 45%; } }
+
+.content_center_title {
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  text-align: center;
+  justify-content: center; }
+
+.section--custom-01 {
+  background-image: url("../img/bg_2.png");
+  background-position: top;
+  background-size: cover; }
+
+.cuadros_features .lazy {
+  height: 60px; }
+
+.cuadro_blockchain, .cuadro_bitcoin, .cuadro_mining {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cuadro_blockchain {
+  background-image: url("../img/cuadro_blockchain.png"); }
+
+.cuadro_bitcoin {
+  background-image: url("../img/background_bitcoin.png"); }
+
+.cuadro_mining {
+  background-image: url("../img/bg_mining.png"); }
