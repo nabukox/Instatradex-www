@@ -7048,7 +7048,7 @@ label {
   justify-content: center; }
 
 .section--custom-01 {
-  background-image: url("../img/bg_2.png");
+  background-image: url("../img/bg_2.jpg");
   background-position: top;
   background-size: cover; }
 
@@ -7061,13 +7061,13 @@ label {
   background-repeat: no-repeat; }
 
 .cuadro_blockchain {
-  background-image: url("../img/cuadro_blockchain.png"); }
+  background-image: url("../img/cuadro_blockchain.jpg"); }
 
 .cuadro_bitcoin {
-  background-image: url("../img/background_bitcoin.png"); }
+  background-image: url("../img/background_bitcoin.jpg"); }
 
 .cuadro_mining {
-  background-image: url("../img/bg_mining.png"); }
+  background-image: url("../img/bg_mining.jpg"); }
 
 /*bloque video*/
 .__play-btn {
