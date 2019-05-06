@@ -7042,7 +7042,7 @@ label {
 
 .content_center_title {
   margin: auto;
-  max-width: 600px;
+  max-width: 980px;
   text-align: center;
   text-align: center;
   justify-content: center; }
@@ -7075,3 +7075,16 @@ label {
 
 .video-container {
   margin-top: 0; }
+
+/*bloque IT ACADEMY*/
+.section--base-bg {
+  color: white; }
+  .section--base-bg .__subtitle, .section--base-bg .__title {
+    color: white; }
+
+.bg_itacademy {
+  background: #350a4c;
+  background-image: linear-gradient(to right, #350a4c, #541079);
+  background-image: url("../img/bg_itacademy.png");
+  background-position: right;
+  background-repeat: no-repeat; }

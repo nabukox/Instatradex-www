@@ -38,7 +38,7 @@
 
 .content_center_title{
 	margin: auto;
-	max-width: 600px;
+	max-width: 980px;
 	text-align: center;
 	text-align: center;
     justify-content: center;
@@ -78,5 +78,23 @@
 
 .video-container{
 	margin-top: 0;
+}
+
+/*bloque IT ACADEMY*/
+
+.section--base-bg{
+	color: white;
+	.__subtitle , .__title{
+		color: white;
+	}
+}
+
+.bg_itacademy{
+	background: darken($primary-color , 10 );
+	background-image: linear-gradient(to right, darken($primary-color , 10 ) , $primary-color );
+	background-image: url("../img/bg_itacademy.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	//background-size: ;
 }
 
