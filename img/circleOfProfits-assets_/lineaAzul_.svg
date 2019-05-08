@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="666.391" height="719.642" viewBox="0 0 666.391 719.642">
+  <g id="lineaAzul_" transform="translate(-27.672 22.59)">
+    <g id="pivotAzul" transform="translate(53.324 59.275) rotate(-0.266)" fill="none" stroke="rgba(237,237,237,0)" stroke-width="92.176">
+      <circle cx="318.892" cy="318.892" r="318.892" stroke="none"/>
+      <circle cx="318.892" cy="318.892" r="272.804" fill="none"/>
+    </g>
+    <path id="franja" d="M28.694,370.594C-39.03,233.59,17.225,67.669,154.341,0" transform="matrix(0.873, 0.487, -0.489, 0.873, 256.409, 25.016)" fill="none" stroke="#2e3192" stroke-linecap="round" stroke-linejoin="round" stroke-width="70"/>
+  </g>
+</svg>

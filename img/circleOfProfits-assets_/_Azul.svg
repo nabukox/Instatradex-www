@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760.599" height="779.41" viewBox="0 0 760.599 779.41">
+  <g id="_Azul" transform="translate(3.718 22.59)">
+    <g id="linea_de_Azul" data-name="linea de Azul" transform="translate(270.187 0.304) rotate(29.209)">
+      <path id="Trazado_2645" data-name="Trazado 2645" d="M276.459,0A276.5,276.5,0,0,0,168.814,531.144,276.5,276.5,0,0,0,384.1,21.773,274.828,274.828,0,0,0,276.459,0Z" transform="translate(0 0)" fill="none" stroke="#f2f2f2" stroke-miterlimit="10" stroke-width="6"/>
+    </g>
+    <g id="lineaAzul_">
+      <g id="pivotAzul" transform="translate(53.324 59.275) rotate(-0.266)" fill="none" stroke="rgba(237,237,237,0)" stroke-width="92.176">
+        <circle cx="318.892" cy="318.892" r="318.892" stroke="none"/>
+        <circle cx="318.892" cy="318.892" r="272.804" fill="none"/>
+      </g>
+      <path id="franja" d="M28.694,370.594C-39.03,233.59,17.225,67.669,154.341,0" transform="matrix(0.873, 0.487, -0.489, 0.873, 256.409, 25.016)" fill="none" stroke="#2e3192" stroke-linecap="round" stroke-linejoin="round" stroke-width="70"/>
+    </g>
+  </g>
+</svg>
