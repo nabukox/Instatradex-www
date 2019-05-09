@@ -14,7 +14,7 @@
       <stop offset="1" stop-color="#60348b"/>
     </linearGradient>
   </defs>
-  <g id="X" transform="translate(-372.16 -73.301)">
+  <g id="x" transform="translate(-372.16 -73.301)">
     <path id="Trazado_2720" data-name="Trazado 2720" d="M419.871,79.421H411.19L394.124,99.672l19.6,23.485h8.681l-19.6-23.485Z" fill="url(#linear-gradient)"/>
     <path id="Trazado_2721" data-name="Trazado 2721" d="M380.841,73.3H372.16l17.066,20.251L372.16,113.8h8.681l17.066-20.251Z" fill="#4ca935"/>
   </g>
