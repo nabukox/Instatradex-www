@@ -25,36 +25,11 @@
 	background-image: linear-gradient(#F5F5F5, #FFFFFF);
 }
 
-// BLOQUE DE BLOCKCHAIN
-
-@media only screen and (min-width: 768px)
-					{
-						.section--custom-01 .img-wrap
-						{
-							position: absolute;
-							top: 0;
-							left: 15px;
-							right: 0;
-							bottom: 0;
-							margin-left: 42%;
-							overflow: hidden;
-						}
-					}
-
-					@media only screen and (min-width: 992px)
-					{
-						.section--custom-01 .__content { margin-bottom: 90px; }
-
-						.section--custom-01 .img-wrap { margin-left: 45%; }
-                    }
-
-.content_center_title{
-	margin: auto;
-	max-width: 980px;
-	text-align: center;
-	text-align: center;
-    justify-content: center;
+// -----------------------BLOQUE DE BLOCKCHAIN
+.__item {
+    min-height: 476px;
 }
+
 
 .section--custom-01{
 	background-image: url("../img/bg_2.jpg");
@@ -72,17 +47,23 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.cuadro_blockchain{
+.cuadro_1{
 	background-image:url("../img/cuadro_blockchain.jpg");	
 }
-.cuadro_bitcoin{
+.cuadro_2{
 	background-image:url("../img/background_bitcoin.jpg");
 	}
-.cuadro_mining{
+.cuadro_3{
 	background-image:url("../img/bg_mining.jpg");
 }
+.cuadro_4{
+	background-image:url("../img/bg_8.jpg");
+}
+.cuadro_5{
+	background-image:url("../img/bg_20.jpg");
+}
 
-/*bloque video*/
+/*-------------------------------bloque video*/
 
 .__play-btn{
 	background-color: #fc6666!important;
