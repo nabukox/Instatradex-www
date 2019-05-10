@@ -113,24 +113,70 @@ window.onload=function(){
 
     //  ctx.fillText(Mining,cxC,cyC,"77px");
      //-----------------------------------
-
-     //IMAGEN X
-    var logoX = new Image();
-    var imgBoton = new Image();
-
-    imgBoton.src = "../img/circleOfProfits-assets_/boton.svg";
-    logoX.src = "../img/circleOfProfits-assets_/X.svg";
-
-    logoX.onload = function(){
-        ctx.drawImage(logoX, cx , cy);
-        
+     
+    
+    //IMAGEN boton     
+    
+    let fondo ={
+        url: "../img/circleOfProfits-assets_/boton.svg",
+        cargaOK: false
     }
-     //--------------------------------
-     //IMAGEN BOTON
-     imgBoton.onload = function(){
-        
-        ctx.drawImage(imgBoton, (cx/2)-5 , (cy/2)-16);
+    let btnX ={
+        url: "../img/circleOfProfits-assets_/x.svg",
+        cargaOK: false
     }
+    
+    fondo.objeto = new Image();
+    fondo.objeto.src = fondo.url;
+    fondo.objeto.addEventListener("load" , cargarfondo);
+    
+    btnX.objeto = new Image();
+    btnX.objeto.src = btnX.url;
+    btnX.objeto.addEventListener("load" , cargarbtnX);
+
+
+
+
+   function cargarfondo() {
+    fondo.cargaOK    = true;
+    dibujar()
+   }
+
+   function cargarbtnX() {
+    btnX.cargaOK        = true;
+    dibujar()
+   }
+
+   function cargartforex(){
+    tforex.cargaOK    = true;
+    dibujar()
+   }
+    
+  
+    //---------------------
+    function dibujar() {
+        if(fondo.cargaOK) {
+            ctx.drawImage(fondo.objeto, (cx/2)-5 , (cy/2)-16 );
+        }
+
+        if(btnX.cargaOK) {
+            ctx.drawImage(btnX.objeto, cx-(30/2) , cy-(60/2) );
+        }
+    }  
+    //-----------texto--------------------  
+
+    function texto(){
+        ctx.font = "22px Arial";
+        ctx.fillStyle="white";
+        ctx.fillText("Crypto Trading", cx/2+(110), 110); 
+    }
+
+    setTimeout(function(){ 
+        texto()
+     }, 100);
+   
+    //-------------------------------     
+    
     
 
    
