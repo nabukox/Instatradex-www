@@ -13,6 +13,18 @@
         } 
 }
 
+//---------------
+
+.bg_chart_gray{
+	background-image: url("../img/bg_chart_gray@2x.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.bg_gradient_gray{
+	background-image: linear-gradient(#F5F5F5, #FFFFFF);
+}
+
 // BLOQUE DE BLOCKCHAIN
 
 @media only screen and (min-width: 768px)
@@ -92,7 +104,7 @@
 .bg_itacademy{
 	background: darken($primary-color , 10 );
 	background-image: linear-gradient(to right, darken($primary-color , 10 ) , $primary-color );
-	background-image: url("../img/bg_itacademy.png");
+	background-image: url("../img/bg_itacademy@2x.png");
 	background-position: right;
 	background-repeat: no-repeat;
 	//background-size: ;
