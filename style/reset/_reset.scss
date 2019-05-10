@@ -12,7 +12,9 @@
     margin-top: 4px;
         } 
 }
-
+a{
+	color:$secondary-color;
+}
 //---------------
 
 .bg_chart_gray{
@@ -26,7 +28,7 @@
 }
 
 // -----------------------BLOQUE DE BLOCKCHAIN
-.__item {
+.__item_cuadro {
     min-height: 476px;
 }
 
@@ -75,20 +77,31 @@
 
 /*bloque IT ACADEMY*/
 
-.section--base-bg{
-	color: white;
-	.__subtitle , .__title{
-		color: white;
+
+
+.bg_itacademy{
+	//background: darken($primary-color , 10 );
+	//background-image: linear-gradient(#F5F5F5, #FFFFFF);
+	//background-image: linear-gradient(to right, darken($primary-color , 10 ) , $primary-color );
+	background-image: url("../img/bg_itacademy@2x.png") , linear-gradient(#F5F5F5, #FFFFFF);
+	background-position: right top;
+	background-repeat: no-repeat;
+	//background-size: ;
+}
+
+/*bloque numeros*/
+
+.facts{
+	.num{
+		color: $secondary-color;
 	}
 }
 
-.bg_itacademy{
-	background: darken($primary-color , 10 );
-	background-image: linear-gradient(to right, darken($primary-color , 10 ) , $primary-color );
-	background-image: url("../img/bg_itacademy@2x.png");
-	background-position: right;
-	background-repeat: no-repeat;
-	//background-size: ;
+/*FONDO DE EDIFICIOS*/
+
+.bg_edificios{
+	background-image: url("../img/bg_numbers.png");
+	
 }
 
 /*bloque footer*/
@@ -96,6 +109,22 @@
 .icono{
 	&:hover{
 		opacity: .5;
+	}
+}
+
+/*about*/
+
+.text-justify{
+	p{
+	text-align: justify;
+}
+}
+
+.list_about{
+	li{
+		text-align: justify;
+		margin-bottom: 1rem;
+		padding: 0 3rem;
 	}
 }
 

@@ -7024,6 +7024,9 @@ label {
   height: 11px;
   margin-top: 4px; }
 
+a {
+  color: #42B748; }
+
 .bg_chart_gray {
   background-image: url("../img/bg_chart_gray@2x.png");
   background-position: right bottom;
@@ -7032,7 +7035,7 @@ label {
 .bg_gradient_gray {
   background-image: linear-gradient(#F5F5F5, #FFFFFF); }
 
-.__item {
+.__item_cuadro {
   min-height: 476px; }
 
 .section--custom-01 {
@@ -7071,21 +7074,31 @@ label {
   margin-top: 0; }
 
 /*bloque IT ACADEMY*/
-.section--base-bg {
-  color: white; }
-  .section--base-bg .__subtitle, .section--base-bg .__title {
-    color: white; }
-
 .bg_itacademy {
-  background: #350a4c;
-  background-image: linear-gradient(to right, #350a4c, #541079);
-  background-image: url("../img/bg_itacademy@2x.png");
-  background-position: right;
+  background-image: url("../img/bg_itacademy@2x.png"), linear-gradient(#F5F5F5, #FFFFFF);
+  background-position: right top;
   background-repeat: no-repeat; }
+
+/*bloque numeros*/
+.facts .num {
+  color: #42B748; }
+
+/*FONDO DE EDIFICIOS*/
+.bg_edificios {
+  background-image: url("../img/bg_numbers.png"); }
 
 /*bloque footer*/
 .icono:hover {
   opacity: .5; }
+
+/*about*/
+.text-justify p {
+  text-align: justify; }
+
+.list_about li {
+  text-align: justify;
+  margin-bottom: 1rem;
+  padding: 0 3rem; }
 
 .containerProfits {
   display: flex;
