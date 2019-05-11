@@ -128,3 +128,29 @@ a{
 	}
 }
 
+.list-latin{
+	li{
+		margin-bottom: 1rem;
+		padding: 0 3rem;
+		list-style: lower-latin!important;
+		text-align: justify;
+	}
+}
+
+.list-decimal {
+	li{
+		margin-bottom: 1rem;
+		padding: 0 3rem;
+		list-style: decimal;
+		text-align: justify;
+	}
+}
+
+.list-lower-roman{
+	li{
+		margin-bottom: 1rem;
+		padding: 0 3rem;
+		list-style: lower-roman;
+		text-align: justify;
+	}
+}
