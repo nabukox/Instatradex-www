@@ -7118,6 +7118,12 @@ a {
   list-style: lower-roman;
   text-align: justify; }
 
+.list-circle li {
+  margin-bottom: 1rem;
+  padding: 0 3rem;
+  list-style: circle;
+  text-align: justify; }
+
 .containerProfits {
   display: flex;
   justify-content: center; }
