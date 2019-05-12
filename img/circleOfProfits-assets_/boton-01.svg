@@ -4,18 +4,21 @@
 	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:url(#Elipse_16_2_);stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_1_);}
 </style>
 <g>
 	<g id="boton" transform="translate(-427.199 -347)">
 		<circle id="Elipse_16" class="st0" cx="552.2" cy="472" r="125"/>
 	</g>
 	<g id="boton_1_" transform="translate(-427.199 -347)">
-		<linearGradient id="Elipse_16_2_" gradientUnits="userSpaceOnUse" x1="468.0588" y1="387.8598" x2="636.3392" y2="556.1402">
-			<stop  offset="0" style="stop-color:#5500FF"/>
-			<stop  offset="1" style="stop-color:#00F6FF"/>
-		</linearGradient>
-		<circle id="Elipse_16_1_" class="st1" cx="552.2" cy="472" r="118"/>
+		<g id="Elipse_16_1_">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="468.0981" y1="387.8993" x2="636.2995" y2="556.1007">
+				<stop  offset="0" style="stop-color:#5500FF"/>
+				<stop  offset="1" style="stop-color:#00F6FF"/>
+			</linearGradient>
+			<path class="st1" d="M552.2,591c-65.6,0-119-53.4-119-119s53.4-119,119-119s119,53.4,119,119S617.8,591,552.2,591z M552.2,355
+				c-64.5,0-117,52.5-117,117s52.5,117,117,117s117-52.5,117-117S616.7,355,552.2,355z"/>
+		</g>
 	</g>
 </g>
 </svg>

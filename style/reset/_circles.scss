@@ -1,0 +1,290 @@
+$lienzo : 700px;
+$g1 : 392px;
+$g2 : 517px;
+$g3 : 455px;
+$g4 : 582px;
+$morado : 152px;
+$cverde : $morado;
+$centro :250px;
+$fondo: 392px;
+$boton: 250px;
+//--m es mitad, g define las imagens , px define posicion equis------------
+$mitadLienzo : $lienzo/2;
+//--------------
+$mg1 : $g1/2;
+$pxg1 : $mitadLienzo - $mg1;
+//--------------
+$mg2 : $g2/2;
+$mg2_crypto : $mg2 - 7;
+$pxg2 : $mitadLienzo - $mg2;
+//--------------
+$mg3 : $g3/2;
+$pxg3 : $mitadLienzo - $mg3;
+//--------------
+$mg4 : $g4/2;
+$pxg4 : $mitadLienzo - $mg4;
+//--------------
+$mmorado : $morado/2;
+$pxmorado : $mitadLienzo - $mmorado;
+//--------------
+$mcverde : $cverde/2;
+$pxcverde : $mitadLienzo - $mcverde;
+//--------------
+$mcentro : $centro/2;
+$pxcentro : $mitadLienzo - $mcentro;
+//--------------
+$mfondo : $fondo/2;
+$pxfondo : $mitadLienzo - $mfondo;
+
+//-------------posiciones de giro AZUL
+$azul_posicion1:180deg;
+$azul_posicion2: 142deg;
+$azul_posicion3 : 218deg;
+
+//-------------posiciones de giro Verde
+$esmeralda_posicion1:0deg;
+$esmeralda_posicion2: 35deg;
+$esmeralda_posicion3 : -$esmeralda_posicion2;
+
+//-------------posiciones de cuadro MORADO
+$cuadro-morado-posicion2 : 35%;
+$cuadro-morado-posicion1 : $pxmorado - ($pxmorado/4);
+
+//-------------posiciones de cuadro VERDE
+$cuadro-verde-posicion2 : -35%;
+$cuadro-verde-posicion1 :   ($pxcverde/4) - $pxcverde;
+
+//------------posiciones de texto CRYPTO TRADING
+$crypto-posicion-1 : 0 ;
+$crypto-posicion-2 : -$mg2_crypto;
+
+//------------posiciones de texto FOREX
+$forex-posicion-1 : 0 ;
+$forex-posicion-2 : $mg1;
+
+.containerProfits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ganancias-crypto{
+        color: white;
+        position: absolute;
+        background: $terciary-color;
+        padding: 1rem 2rem;
+        transform:translate(0, 0);
+        border-radius: 50%;
+        z-index: 1000;
+        //color: black;
+    }
+    .ganancias-forex{
+        color: white;
+        position: absolute;
+        background: $cuaternary-color ;
+        padding: 1rem 2rem;
+        transform:translate(0, $forex-posicion-1);
+        border-radius: 50%;
+        z-index: 1000;
+        //color: black;
+    }
+   
+}
+
+.circulos{  
+
+    position: relative;
+    color: white;
+    border: 1px solid $gris-claro;
+    width: $lienzo;
+    height: $lienzo;    
+
+    .cmorado{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: $morado;
+        height: $morado;
+        border-radius: 10%;
+        background: $primary-color ;        
+        transform: translate($cuadro-morado-posicion1 , $pxmorado);
+
+        animation-name: cuadro-morado;
+        animation-duration: 1.2s;
+        //animation-iteration-count: ;
+        //animation-direction: normal;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .cverde{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: $morado;
+        height: $morado;
+        right: 0;
+        border-radius: 10%;
+        background: $secondary-color ;
+       
+        transform: translate($cuadro-verde-posicion1 , $pxcverde);
+    }
+
+    
+
+}
+.grises{
+    position: relative;
+    
+    .gris1 , .gris2{
+        border: 5px solid $gris-claro;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .gris1{
+        
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+        width: $g1;
+        height: $g1;               
+        transform:translate( $pxg1,  $pxg1) rotate(0deg);        
+        transition: 1s all; 
+
+       
+    }
+    
+
+    .gris2 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: black;    
+        width: $g2;
+        height: $g2;        
+        transform:translate($pxg2,$pxg2);
+        
+        
+    }
+
+}
+.grises {
+}
+
+.contenedor-esmeralda{
+    position: absolute;
+    width: $g3;
+    height: $g3;
+    //border: 1px solid red;
+    transform: translate($pxg3,$pxg3) rotate(0);
+
+    .esmeralda{
+        position: absolute; 
+        transform: rotate($esmeralda_posicion1) scale(.65);
+        animation-name: esmeralda;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+    }
+    
+    
+}
+
+
+.contenedor-azul{
+    transform-origin: 50% 50%;
+    
+    position: absolute;
+    width: $g4;
+    height: $g4;
+    //border: 1px solid rgb(51, 255, 0);
+    transform: translate($pxg4,$pxg4) rotate(0deg) scale(1);
+    
+
+    .azul{
+        position: absolute;        
+        transform: rotate($azul_posicion1) scale(.5);
+        transition: 1s all;
+        z-index: 40;
+
+        animation-name: azul;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+    }    
+   
+}
+
+.contenedor-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+    
+    position: absolute;
+   
+    
+    .centro{
+        position: absolute;
+        //transform: translate($pxcentro,$pxcentro) rotate(0) ;
+    }
+    
+}
+
+.centro.imagen{
+    position: absolute;
+    transform: translate($pxfondo,$pxfondo) rotate(0) ;
+}
+
+.boton{
+    width: $boton;
+}
+
+@keyframes cuadro-morado{
+    0%{
+        transform: translate($cuadro-morado-posicion1 , $pxmorado) rotate(0);
+    }
+    100%{
+        transform: translate($cuadro-morado-posicion2 , $pxmorado) rotate(720deg);
+    } 
+}
+//esmeralda
+$esmeralda_posicion1-1: $esmeralda_posicion2 - 100;
+@keyframes esmeralda{
+    0%{
+        transform: rotate($esmeralda_posicion1) scale(.65);
+    }
+    40%{
+        transform: rotate($esmeralda_posicion1) scale(1);
+    }
+    60%{
+        transform: rotate($esmeralda_posicion2) scale(1);
+    }
+    100%{
+        transform: rotate($esmeralda_posicion3) scale(1);
+    }
+    
+    
+}
+//azul
+$azul_posicion1-1: $azul_posicion2 - 100;
+@keyframes azul{
+    0%{
+        transform: rotate($azul-posicion1) scale(.65);
+    }
+    40%{
+        transform: rotate($azul_posicion1) scale(1);
+    }
+    60%{
+        transform: rotate($azul_posicion2) scale(1);
+    }
+    100%{
+        transform: rotate($azul_posicion3) scale(1);
+    }
+    
+    
+}

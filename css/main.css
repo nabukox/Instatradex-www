@@ -7126,4 +7126,149 @@ a {
 
 .containerProfits {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+  .containerProfits .ganancias-crypto {
+    color: white;
+    position: absolute;
+    background: #2E3192;
+    padding: 1rem 2rem;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    z-index: 1000; }
+  .containerProfits .ganancias-forex {
+    color: white;
+    position: absolute;
+    background: #00A99D;
+    padding: 1rem 2rem;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    z-index: 1000; }
+
+.circulos {
+  position: relative;
+  color: white;
+  border: 1px solid #F2F2F2;
+  width: 700px;
+  height: 700px; }
+  .circulos .cmorado {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 152px;
+    height: 152px;
+    border-radius: 10%;
+    background: #541079;
+    transform: translate(205.5px, 274px);
+    animation-name: cuadro-morado;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+  .circulos .cverde {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 152px;
+    height: 152px;
+    right: 0;
+    border-radius: 10%;
+    background: #42B748;
+    transform: translate(-205.5px, 274px); }
+
+.grises {
+  position: relative; }
+  .grises .gris1, .grises .gris2 {
+    border: 5px solid #F2F2F2;
+    border-radius: 50%;
+    position: absolute; }
+  .grises .gris1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 392px;
+    height: 392px;
+    transform: translate(154px, 154px) rotate(0deg);
+    transition: 1s all; }
+  .grises .gris2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    width: 517px;
+    height: 517px;
+    transform: translate(91.5px, 91.5px); }
+
+.contenedor-esmeralda {
+  position: absolute;
+  width: 455px;
+  height: 455px;
+  transform: translate(122.5px, 122.5px) rotate(0); }
+  .contenedor-esmeralda .esmeralda {
+    position: absolute;
+    transform: rotate(0deg) scale(0.65);
+    animation-name: esmeralda;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s; }
+
+.contenedor-azul {
+  transform-origin: 50% 50%;
+  position: absolute;
+  width: 582px;
+  height: 582px;
+  transform: translate(59px, 59px) rotate(0deg) scale(1); }
+  .contenedor-azul .azul {
+    position: absolute;
+    transform: rotate(180deg) scale(0.5);
+    transition: 1s all;
+    z-index: 40;
+    animation-name: azul;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s; }
+
+.contenedor-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+  position: absolute; }
+  .contenedor-centro .centro {
+    position: absolute; }
+
+.centro.imagen {
+  position: absolute;
+  transform: translate(154px, 154px) rotate(0); }
+
+.boton {
+  width: 250px; }
+
+@keyframes cuadro-morado {
+  0% {
+    transform: translate(205.5px, 274px) rotate(0); }
+  100% {
+    transform: translate(35%, 274px) rotate(720deg); } }
+
+@keyframes esmeralda {
+  0% {
+    transform: rotate(0deg) scale(0.65); }
+  40% {
+    transform: rotate(0deg) scale(1); }
+  60% {
+    transform: rotate(35deg) scale(1); }
+  100% {
+    transform: rotate(-35deg) scale(1); } }
+
+@keyframes azul {
+  0% {
+    transform: rotate(180deg) scale(0.65); }
+  40% {
+    transform: rotate(180deg) scale(1); }
+  60% {
+    transform: rotate(142deg) scale(1); }
+  100% {
+    transform: rotate(218deg) scale(1); } }

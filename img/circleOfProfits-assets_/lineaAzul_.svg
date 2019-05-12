@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="666.391" height="719.642" viewBox="0 0 666.391 719.642">
-  <g id="lineaAzul_" transform="translate(-27.672 22.59)">
-    <g id="pivotAzul" transform="translate(53.324 59.275) rotate(-0.266)" fill="none" stroke="rgba(237,237,237,0)" stroke-width="92.176">
-      <circle cx="318.892" cy="318.892" r="318.892" stroke="none"/>
-      <circle cx="318.892" cy="318.892" r="272.804" fill="none"/>
-    </g>
-    <path id="franja" d="M28.694,370.594C-39.03,233.59,17.225,67.669,154.341,0" transform="matrix(0.873, 0.487, -0.489, 0.873, 256.409, 25.016)" fill="none" stroke="#2e3192" stroke-linecap="round" stroke-linejoin="round" stroke-width="70"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 582 582" style="enable-background:new 0 0 582 582;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;fill:#9FA200;}
+	.st1{fill:none;stroke:#2E3192;stroke-width:55.037;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<circle id="Elipse_8_1_" class="st0" cx="291" cy="291" r="291"/>
+	<path class="st1" d="M476.8,466.8c-46.6,49.2-112.6,80-185.8,80s-139.2-30.7-185.8-80"/>
+</g>
 </svg>
