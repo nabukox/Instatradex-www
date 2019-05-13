@@ -7027,6 +7027,10 @@ label {
 a {
   color: #42B748; }
 
+.p-t-50 {
+  padding-top: 50px !important;
+  padding-bottom: 280px; }
+
 .bg_chart_gray {
   background-image: url("../img/bg_chart_gray@2x.png");
   background-position: right bottom;
@@ -7124,18 +7128,44 @@ a {
   list-style: circle;
   text-align: justify; }
 
+.timeline .__item--active .__point {
+  border-color: #42B748; }
+
+.timeline .__item--active .__point {
+  border-color: #42B748; }
+  .timeline .__item--active .__point:before {
+    border-color: #42B748;
+    background-color: #42B748; }
+
+.timeline .__line--active {
+  background-color: #42B748; }
+
 .containerProfits {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .containerProfits p {
+    color: #40404b;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20%;
+    background: white;
+    text-align: justify;
+    width: 700px;
+    padding: 60px; }
   .containerProfits .ganancias-crypto {
     color: white;
     position: absolute;
     background: #2E3192;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     transform: translate(0, 0);
     border-radius: 50%;
-    z-index: 1000; }
+    opacity: 0; }
+  .containerProfits .ganancias-crypto-animado {
+    animation-name: crypto;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
   .containerProfits .ganancias-forex {
     color: white;
     position: absolute;
@@ -7143,12 +7173,17 @@ a {
     padding: 1rem 2rem;
     transform: translate(0, 0);
     border-radius: 50%;
-    z-index: 1000; }
+    z-index: 1000;
+    opacity: 0; }
+  .containerProfits .ganancias-forex-animado {
+    animation-name: forex;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
 
 .circulos {
   position: relative;
   color: white;
-  border: 1px solid #F2F2F2;
   width: 700px;
   height: 700px; }
   .circulos .cmorado {
@@ -7161,11 +7196,18 @@ a {
     height: 152px;
     border-radius: 10%;
     background: #541079;
-    transform: translate(205.5px, 274px);
+    transform: translate(205.5px, 274px); }
+  .circulos .cmorado-animado {
     animation-name: cuadro-morado;
     animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.92, 0, 0.16, 0.99);
     animation-fill-mode: forwards; }
+  .circulos .cmorado-hover {
+    animation-name: cuadro-sobre;
+    animation-duration: 1.2s;
+    animation-direction: alternate; }
+  .circulos .cmorado-fin {
+    transform: translate(35%, 274px) rotate(720deg); }
   .circulos .cverde {
     position: absolute;
     display: flex;
@@ -7178,6 +7220,12 @@ a {
     border-radius: 10%;
     background: #42B748;
     transform: translate(-205.5px, 274px); }
+  .circulos .cverde-animado {
+    animation-name: cuadro-verde;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
 
 .grises {
   position: relative; }
@@ -7191,8 +7239,12 @@ a {
     align-items: flex-start;
     width: 392px;
     height: 392px;
-    transform: translate(154px, 154px) rotate(0deg);
+    transform: translate(154px, 154px);
     transition: 1s all; }
+  .grises .gris1-animado {
+    animation-name: gris1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
   .grises .gris2 {
     display: flex;
     justify-content: center;
@@ -7200,7 +7252,13 @@ a {
     color: black;
     width: 517px;
     height: 517px;
-    transform: translate(91.5px, 91.5px); }
+    transform: translate(91.5px, 91.5px);
+    transition: 1s all; }
+  .grises .gris2-animado {
+    animation-name: gris2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s; }
 
 .contenedor-esmeralda {
   position: absolute;
@@ -7209,11 +7267,22 @@ a {
   transform: translate(122.5px, 122.5px) rotate(0); }
   .contenedor-esmeralda .esmeralda {
     position: absolute;
-    transform: rotate(0deg) scale(0.65);
+    transform: rotate(0deg) scale(0.65); }
+  .contenedor-esmeralda .esmeralda-animado {
     animation-name: esmeralda;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    animation-duration: 2s; }
+    animation-duration: 1.5s;
+    animation-delay: 2s; }
+  .contenedor-esmeralda .esmeralda-hover {
+    animation-name: esmeralda-hover;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+    animation-iteration-count: 5; }
+  .contenedor-esmeralda .esmeralda-fin {
+    transform: rotate(-35deg) scale(1); }
 
 .contenedor-azul {
   transform-origin: 50% 50%;
@@ -7225,11 +7294,23 @@ a {
     position: absolute;
     transform: rotate(180deg) scale(0.5);
     transition: 1s all;
-    z-index: 40;
+    z-index: 40; }
+  .contenedor-azul .azul-animado {
     animation-name: azul;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
     animation-duration: 2s; }
+  .contenedor-azul .azul-hover {
+    animation-name: azul-hover;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 5;
+    animation-duration: 1s;
+    animation-delay: -1s;
+    transform: rotate(212deg) scale(1); }
+  .contenedor-azul .azul-fin {
+    transform: rotate(212deg) scale(1); }
 
 .contenedor-centro {
   display: flex;
@@ -7253,12 +7334,42 @@ a {
   100% {
     transform: translate(35%, 274px) rotate(720deg); } }
 
+@keyframes cuadro-sobre {
+  from {
+    transform: translate(35%, 274px) rotate(720deg); }
+  to {
+    transform: translate(35%, 274px) rotate(-720deg); } }
+
+@keyframes cuadro-verde {
+  0% {
+    transform: translate(-205.5px, 274px); }
+  40% {
+    transform: translate(-35%, 274px) scale(1); }
+  50% {
+    transform: translate(-35%, 274px) scale(1); }
+  60% {
+    transform: translate(-35%, 274px) scale(1.2); }
+  70% {
+    transform: translate(-35%, 274px) scale(1); }
+  80% {
+    transform: translate(-35%, 274px) scale(1.3); }
+  90% {
+    transform: translate(-35%, 274px) scale(1.05); }
+  100% {
+    transform: translate(-35%, 274px) scale(1); } }
+
 @keyframes esmeralda {
   0% {
     transform: rotate(0deg) scale(0.65); }
   40% {
-    transform: rotate(0deg) scale(1); }
+    transform: rotate(35deg) scale(1); }
   60% {
+    transform: rotate(35deg) scale(1); }
+  100% {
+    transform: rotate(-35deg) scale(1); } }
+
+@keyframes esmeralda-hover {
+  0% {
     transform: rotate(35deg) scale(1); }
   100% {
     transform: rotate(-35deg) scale(1); } }
@@ -7267,8 +7378,49 @@ a {
   0% {
     transform: rotate(180deg) scale(0.65); }
   40% {
-    transform: rotate(180deg) scale(1); }
+    transform: rotate(142deg) scale(1); }
   60% {
     transform: rotate(142deg) scale(1); }
   100% {
-    transform: rotate(218deg) scale(1); } }
+    transform: rotate(212deg) scale(1); } }
+
+@keyframes azul-hover {
+  0% {
+    transform: rotate(212deg) scale(1); }
+  100% {
+    transform: rotate(142deg) scale(1); } }
+
+@keyframes crypto {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0); }
+  100% {
+    opacity: 100;
+    transform: translate(0, -251.5px); } }
+
+@keyframes forex {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0); }
+  90% {
+    opacity: 0;
+    transform: translate(0, 196px); }
+  100% {
+    opacity: 100;
+    transform: translate(0, 196px); } }
+
+@keyframes gris1 {
+  0% {
+    transform: translate(154px, 154px) scale(0.2); }
+  30% {
+    transform: translate(154px, 154px) scale(1.3); }
+  100% {
+    transform: translate(154px, 154px) scale(1); } }
+
+@keyframes gris2 {
+  0% {
+    transform: translate(91.5px, 91.5px) scale(0.2); }
+  30% {
+    transform: translate(91.5px, 91.5px) scale(1.3); }
+  100% {
+    transform: translate(91.5px, 91.5px) scale(1); } }

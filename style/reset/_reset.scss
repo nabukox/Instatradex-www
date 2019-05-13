@@ -15,6 +15,11 @@
 a{
 	color:$secondary-color;
 }
+
+.p-t-50{
+	padding-top: 50px!important;
+	padding-bottom: 280px;
+}
 //---------------
 
 .bg_chart_gray{
@@ -162,4 +167,22 @@ a{
 		list-style: circle;
 		text-align: justify;
 	}
+}
+
+//ROAD MAP
+
+.timeline .__item--active .__point {
+    border-color: $secondary-color;
+}
+.timeline .__item--active .__point {
+	border-color: $secondary-color;
+	
+	&:before{
+		border-color:$secondary-color;
+		background-color: $secondary-color;
+	}
+}
+
+.timeline .__line--active{
+	background-color: $secondary-color;
 }

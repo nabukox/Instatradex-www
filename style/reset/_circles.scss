@@ -39,12 +39,14 @@ $pxfondo : $mitadLienzo - $mfondo;
 //-------------posiciones de giro AZUL
 $azul_posicion1:180deg;
 $azul_posicion2: 142deg;
-$azul_posicion3 : 218deg;
+$azul_posicion3 : 212deg;
 
 //-------------posiciones de giro Verde
 $esmeralda_posicion1:0deg;
 $esmeralda_posicion2: 35deg;
-$esmeralda_posicion3 : -$esmeralda_posicion2;
+$esmeralda_posicion3 : -35deg;
+
+$duracion-azul  : 2s;
 
 //-------------posiciones de cuadro MORADO
 $cuadro-morado-posicion2 : 35%;
@@ -67,16 +69,36 @@ $forex-posicion-2 : $mg1;
     justify-content: center;
     align-items: center;
 
+    p{
+        color: $dark-gray ;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -20%;
+        background: white;
+        text-align: justify;
+        width:$lienzo;
+        padding: 60px;
+        
+    }
+
     .ganancias-crypto{
         color: white;
         position: absolute;
         background: $terciary-color;
-        padding: 1rem 2rem;
-        transform:translate(0, 0);
+        padding: 1rem 1rem;
+        transform:translate(0, $crypto-posicion-1);
         border-radius: 50%;
-        z-index: 1000;
-        //color: black;
+        
+        opacity: 0;        
     }
+
+    .ganancias-crypto-animado{
+        animation-name: crypto;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
     .ganancias-forex{
         color: white;
         position: absolute;
@@ -85,16 +107,24 @@ $forex-posicion-2 : $mg1;
         transform:translate(0, $forex-posicion-1);
         border-radius: 50%;
         z-index: 1000;
-        //color: black;
+        
+        opacity: 0;       
+        
+    }
+    .ganancias-forex-animado{
+        animation-name: forex;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
     }
    
 }
 
-.circulos{  
+.circulos{      
 
     position: relative;
     color: white;
-    border: 1px solid $gris-claro;
+    //border: 1px solid $gris-claro;
     width: $lienzo;
     height: $lienzo;    
 
@@ -110,13 +140,28 @@ $forex-posicion-2 : $mg1;
         background: $primary-color ;        
         transform: translate($cuadro-morado-posicion1 , $pxmorado);
 
-        animation-name: cuadro-morado;
-        animation-duration: 1.2s;
-        //animation-iteration-count: ;
-        //animation-direction: normal;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
+        
+        
+          
     }
+    .cmorado-animado{
+        animation-name: cuadro-morado;
+        animation-duration: 1.2s;      
+        animation-timing-function: cubic-bezier(.92,0,.16,.99);
+        animation-fill-mode: forwards; 
+        
+    }
+
+    .cmorado-hover{
+        animation-name: cuadro-sobre;
+        animation-duration: 1.2s;  
+        animation-direction: alternate;
+    }
+    .cmorado-fin{
+        transform: translate($cuadro-morado-posicion2 , $pxmorado) rotate(720deg);
+    }
+    
+    
 
     .cverde{
         position: absolute;
@@ -128,11 +173,18 @@ $forex-posicion-2 : $mg1;
         height: $morado;
         right: 0;
         border-radius: 10%;
-        background: $secondary-color ;
-       
+        background: $secondary-color ;       
         transform: translate($cuadro-verde-posicion1 , $pxcverde);
-    }
 
+        
+    }
+    .cverde-animado{
+        animation-name: cuadro-verde;
+        animation-delay: 1s;
+        animation-duration: 3s;        
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
     
 
 }
@@ -143,6 +195,9 @@ $forex-posicion-2 : $mg1;
         border: 5px solid $gris-claro;
         border-radius: 50%;
         position: absolute;
+        
+
+        
     }
     .gris1{
         
@@ -152,10 +207,16 @@ $forex-posicion-2 : $mg1;
         
         width: $g1;
         height: $g1;               
-        transform:translate( $pxg1,  $pxg1) rotate(0deg);        
+        transform: translate( $pxg1,  $pxg1) ;        
         transition: 1s all; 
-
        
+       
+    }
+
+    .gris1-animado{
+        animation-name: gris1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
     
 
@@ -167,13 +228,19 @@ $forex-posicion-2 : $mg1;
         width: $g2;
         height: $g2;        
         transform:translate($pxg2,$pxg2);
-        
-        
+
+        transition: 1s all; 
+    }
+
+    .gris2-animado{
+        animation-name: gris2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
     }
 
 }
-.grises {
-}
+
 
 .contenedor-esmeralda{
     position: absolute;
@@ -185,10 +252,28 @@ $forex-posicion-2 : $mg1;
     .esmeralda{
         position: absolute; 
         transform: rotate($esmeralda_posicion1) scale(.65);
+        
+    }
+    .esmeralda-animado{
         animation-name: esmeralda;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
-        animation-duration: 2s;
+        animation-duration: 1.5s;
+        animation-delay: 2s;
+    }
+
+    .esmeralda-hover{
+        animation-name: esmeralda-hover;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1.5s;
+        animation-delay: -1s;
+        
+        animation-iteration-count: 5;  
+    }
+
+    .esmeralda-fin{
+        transform: rotate($esmeralda_posicion3) scale(1);
     }
     
     
@@ -209,13 +294,29 @@ $forex-posicion-2 : $mg1;
         position: absolute;        
         transform: rotate($azul_posicion1) scale(.5);
         transition: 1s all;
-        z-index: 40;
-
+        z-index: 40;       
+    }    
+    .azul-animado{
         animation-name: azul;
         animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        animation-duration: 2s;
-    }    
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+        animation-duration: $duracion-azul;
+        //animation-delay: ;
+    }
+    .azul-hover{
+        
+        animation-name: azul-hover;        
+        animation-timing-function: ease-in;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: 5;       
+        animation-duration: 1s;
+        animation-delay: -1s;
+        transform: rotate($azul_posicion3) scale(1);
+    }
+    .azul-fin{
+        transform: rotate($azul_posicion3) scale(1);
+    }
    
 }
 
@@ -226,7 +327,8 @@ $forex-posicion-2 : $mg1;
     transform-origin: 50% 50%;
     
     position: absolute;
-   
+    
+  
     
     .centro{
         position: absolute;
@@ -243,7 +345,7 @@ $forex-posicion-2 : $mg1;
 .boton{
     width: $boton;
 }
-
+//---------------------------------------
 @keyframes cuadro-morado{
     0%{
         transform: translate($cuadro-morado-posicion1 , $pxmorado) rotate(0);
@@ -252,6 +354,48 @@ $forex-posicion-2 : $mg1;
         transform: translate($cuadro-morado-posicion2 , $pxmorado) rotate(720deg);
     } 
 }
+
+@keyframes cuadro-sobre{
+    from{
+        transform: translate($cuadro-morado-posicion2 , $pxmorado) rotate(720deg);
+    }
+    to{
+        transform: translate($cuadro-morado-posicion2 , $pxmorado) rotate(-720deg);
+    }
+}
+//---------
+@keyframes cuadro-verde{
+    0%{
+        transform: translate($cuadro-verde-posicion1 , $pxcverde) ;
+    }
+    40%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1);
+    } 
+    50%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1);
+    }
+    60%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1.2);
+    }
+    70%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1);
+    }
+    80%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1.3);
+    }
+    90%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1.05);
+    }
+    100%{
+        transform: translate($cuadro-verde-posicion2 , $pxcverde) scale(1);
+    }
+
+
+}
+
+
+//---------------------------------------
+
 //esmeralda
 $esmeralda_posicion1-1: $esmeralda_posicion2 - 100;
 @keyframes esmeralda{
@@ -259,7 +403,7 @@ $esmeralda_posicion1-1: $esmeralda_posicion2 - 100;
         transform: rotate($esmeralda_posicion1) scale(.65);
     }
     40%{
-        transform: rotate($esmeralda_posicion1) scale(1);
+        transform: rotate($esmeralda_posicion2) scale(1);
     }
     60%{
         transform: rotate($esmeralda_posicion2) scale(1);
@@ -270,6 +414,18 @@ $esmeralda_posicion1-1: $esmeralda_posicion2 - 100;
     
     
 }
+@keyframes esmeralda-hover{
+    0%{
+        transform: rotate($esmeralda_posicion2) scale(1);
+    }
+    100%{
+        transform: rotate($esmeralda_posicion3) scale(1);
+    }
+
+}
+
+
+
 //azul
 $azul_posicion1-1: $azul_posicion2 - 100;
 @keyframes azul{
@@ -277,7 +433,7 @@ $azul_posicion1-1: $azul_posicion2 - 100;
         transform: rotate($azul-posicion1) scale(.65);
     }
     40%{
-        transform: rotate($azul_posicion1) scale(1);
+        transform: rotate($azul_posicion2) scale(1);
     }
     60%{
         transform: rotate($azul_posicion2) scale(1);
@@ -287,4 +443,65 @@ $azul_posicion1-1: $azul_posicion2 - 100;
     }
     
     
+}
+
+
+@keyframes azul-hover{   
+    
+    0%{
+        transform: rotate($azul_posicion3) scale(1);
+    }
+    100%{
+        transform: rotate($azul_posicion2) scale(1);
+    }
+}
+
+@keyframes crypto{
+    0%{
+        opacity: 0;
+        transform:translate(0, $crypto-posicion-1);
+    }
+    100%{
+        opacity: 100;
+        transform:translate(0, $crypto-posicion-2);
+    }
+}
+
+@keyframes forex{
+    0%{
+        opacity: 0;
+        transform:translate(0, $forex-posicion-1);
+    }
+    90%{
+        opacity: 0;
+        transform:translate(0, $forex-posicion-2);
+    }
+    100%{
+        opacity: 100;
+        transform:translate(0, $forex-posicion-2);
+    }
+}
+
+@keyframes gris1{
+    0%{
+        transform: translate( $pxg1,  $pxg1) scale(.2);
+    }
+    30%{
+        transform: translate( $pxg1,  $pxg1) scale(1.3);
+    }
+    100%{
+        transform: translate( $pxg1,  $pxg1) scale(1);
+    }
+}
+
+@keyframes gris2{
+    0%{
+        transform: translate( $pxg2,  $pxg2) scale(.2);
+    }
+    30%{
+        transform: translate( $pxg2,  $pxg2) scale(1.3);
+    }
+    100%{
+        transform: translate( $pxg2,  $pxg2) scale(1);
+    }
 }
