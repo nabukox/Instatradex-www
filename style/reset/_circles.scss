@@ -71,6 +71,8 @@ $forex-posicion-2 : $mg1;
     justify-content: center;
     align-items: center;
 
+    
+
     p{
         color: $dark-gray ;
         position: absolute;
@@ -182,6 +184,38 @@ $forex-posicion-2 : $mg1;
         color: $secondary-color;       
         transform: translate($cuadro-verde-posicion1 , $pxcverde);
 
+        .profit1{
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            right: 25px;
+            top: -25px;
+            color: $secondary-color ;
+            height: 50px;
+            width: 50px;
+            border:1px solid $secondary-color;
+            background: white;
+            
+        }
+
+        .profit2{
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 5px;
+            bottom: -25px;
+            color: $secondary-color ;
+            height: 50px;
+            width: 50px;
+            border:1px solid $secondary-color;
+            background: white;
+        }
         
     }
     .cverde-animado{
@@ -270,7 +304,7 @@ $forex-posicion-2 : $mg1;
 
     .esmeralda-hover{
         animation-name: esmeralda-hover;
-        animation-direction: normal;
+        animation-direction: reverse;
         animation-timing-function: ease-in-out;
         animation-duration: 1.5s;
         animation-delay: -1s;        

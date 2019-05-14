@@ -4,6 +4,7 @@ const $cverde = document.getElementById('cverde');
 const $gris2 = document.getElementById('gris2');
 const $gris1 = document.getElementById('gris1');
 const $esmeralda = document.getElementById('esmeralda');
+
 const $azul = document.getElementById('azul');
 const $crypto = document.getElementById('ganancias-crypto');
 const $forex = document.getElementById('ganancias-forex');	
@@ -19,6 +20,7 @@ window.addEventListener('scroll', (event) => {
         $gris2.classList.add('gris2-animado');
         $gris1.classList.add('gris1-animado');
         $esmeralda.classList.add('esmeralda-animado');
+        
         $azul.classList.add('azul-animado');
         $crypto.classList.add('ganancias-crypto-animado');
         $forex.classList.add('ganancias-forex-animado');
@@ -31,6 +33,7 @@ window.addEventListener('scroll', (event) => {
         $gris2.classList.remove('gris2-animado');
         $gris1.classList.remove('gris1-animado');
         $esmeralda.classList.remove('esmeralda-animado' , 'esmeralda-hover' , 'esmeralda-fin');
+        
         $azul.classList.remove('azul-animado' , 'azul-hover' , 'azul-fin');
         $crypto.classList.remove('ganancias-crypto-animado');
         $forex.classList.remove('ganancias-forex-animado');

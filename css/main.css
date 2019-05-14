@@ -7014,6 +7014,9 @@ label {
     margin-left: 30px;
     margin-right: 30px; } }
 
+html {
+  scroll-behavior: smooth; }
+
 .justify-content-center {
   justify-content: center; }
 
@@ -7140,6 +7143,23 @@ a {
 .timeline .__line--active {
   background-color: #42B748; }
 
+.__itemprofits {
+  margin-bottom: 4rem;
+  padding-left: 4rem;
+  font-weight: bold;
+  height: 35px;
+  display: flex;
+  align-items: center; }
+  .__itemprofits:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/ico/check.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin-left: -50px; }
+
 .containerProfits {
   display: flex;
   justify-content: center;
@@ -7224,6 +7244,34 @@ a {
     background: white;
     color: #42B748;
     transform: translate(-205.5px, 274px); }
+    .circulos .cverde .profit1 {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 25px;
+      top: -25px;
+      color: #42B748;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #42B748;
+      background: white; }
+    .circulos .cverde .profit2 {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      left: 5px;
+      bottom: -25px;
+      color: #42B748;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #42B748;
+      background: white; }
   .circulos .cverde-animado {
     animation-name: cuadro-verde;
     animation-delay: 1s;
@@ -7280,7 +7328,7 @@ a {
     animation-delay: 2s; }
   .contenedor-esmeralda .esmeralda-hover {
     animation-name: esmeralda-hover;
-    animation-direction: normal;
+    animation-direction: reverse;
     animation-timing-function: ease-in-out;
     animation-duration: 1.5s;
     animation-delay: -1s;
