@@ -1,32 +1,40 @@
-function getBootstrapDeviceSize() {
-    return $('#users-device-size').find('div:visible').first().attr('id');
-}
-console.log(getBootstrapDeviceSize());
-$('#bootstrap-touch-slider').bsTouchSlider();
+// $('#bootstrap-touch-slider').bsTouchSlider();
 const options = {
     speed: 100,
     cursor: false,
     startDelay: 50,
 };
-let h1TypeInstances = new TypeIt('h1', options);
-let pTypeInstances = new TypeIt('p', options);
-let titleInstace = new TypeIt('#element',{
-    strings: ['Welcome to the Sliders'],
-    speed: 100,
-    cursor: false,
-    breakLines: false,
-});
-titleInstace.go();
-h1TypeInstances.go();
-pTypeInstances.go();
-$('#bootstrap-touch-slider').on('slide.bs.carousel', function () {
-    h1TypeInstances.reset().freeze();
-    pTypeInstances.reset().freeze();
-    titleInstace.reset().freeze();
-    setTimeout(() => {
-        h1TypeInstances.unfreeze();
-        pTypeInstances.unfreeze();
-        titleInstace.unfreeze();
+let Instances = new TypeIt('.TypeIt', options);
+Instances.go();
+// let h1TypeInstances = new TypeIt('h1.typeIt', options);
+// let pTypeInstances = new TypeIt('p.typeIt', options);
 
+// h1TypeInstances.go();
+// pTypeInstances.go();
+
+// $('#bootstrap-touch-slider').on('slide.bs.carousel', function () {
+//     h1TypeInstances.reset().freeze();
+//     pTypeInstances.reset().freeze();
+//
+//     setTimeout(() => {
+//         h1TypeInstances.unfreeze();
+//         pTypeInstances.unfreeze();
+//
+//     }, 900);
+// });
+
+
+// On before slide change
+$('.start-screen__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    Instances.reset().freeze();
+    setTimeout(() => {
+        Instances.unfreeze();
+    }, 900);
+});
+
+$('.start-screen__slider').on('swipe', function(event, slick, direction){
+    Instances.reset().freeze();
+    setTimeout(() => {
+        Instances.unfreeze();
     }, 900);
 });
