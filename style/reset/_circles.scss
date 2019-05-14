@@ -39,12 +39,12 @@ $pxfondo : $mitadLienzo - $mfondo;
 //-------------posiciones de giro AZUL
 $azul_posicion1:180deg;
 $azul_posicion2: 142deg;
-$azul_posicion3 : 212deg;
+$azul_posicion3 : 225deg;
 
 //-------------posiciones de giro Verde
 $esmeralda_posicion1:0deg;
 $esmeralda_posicion2: 35deg;
-$esmeralda_posicion3 : -35deg;
+$esmeralda_posicion3 : -45deg;
 
 $duracion-azul  : 2s;
 
@@ -136,8 +136,10 @@ $forex-posicion-2 : $mg1;
         flex-direction: column;
         width: $morado;
         height: $morado;
-        border-radius: 10%;
-        background: $primary-color ;        
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+        background: white ;   
+        color: $primary-color;     
         transform: translate($cuadro-morado-posicion1 , $pxmorado);
 
         
@@ -172,8 +174,10 @@ $forex-posicion-2 : $mg1;
         width: $morado;
         height: $morado;
         right: 0;
-        border-radius: 10%;
-        background: $secondary-color ;       
+        border-radius: 50%;
+        border: 1px solid $secondary-color;
+        background: white ;
+        color: $secondary-color;       
         transform: translate($cuadro-verde-posicion1 , $pxcverde);
 
         
