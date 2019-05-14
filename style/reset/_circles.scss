@@ -43,8 +43,10 @@ $azul_posicion3 : 225deg;
 
 //-------------posiciones de giro Verde
 $esmeralda_posicion1:0deg;
-$esmeralda_posicion2: 35deg;
+$esmeralda_posicion2: 35deg+360;
 $esmeralda_posicion3 : -45deg;
+$esmeralda_posicion4: -45deg;
+$esmeralda_posicion5: 45deg+180+45+45;
 
 $duracion-azul  : 2s;
 
@@ -268,12 +270,13 @@ $forex-posicion-2 : $mg1;
 
     .esmeralda-hover{
         animation-name: esmeralda-hover;
-        animation-direction: alternate;
+        animation-direction: normal;
         animation-timing-function: ease-in-out;
         animation-duration: 1.5s;
-        animation-delay: -1s;
+        animation-delay: -1s;        
+        animation-iteration-count: 5; 
         
-        animation-iteration-count: 5;  
+        transform: rotate($esmeralda_posicion4) scale(1);
     }
 
     .esmeralda-fin{
@@ -420,10 +423,10 @@ $esmeralda_posicion1-1: $esmeralda_posicion2 - 100;
 }
 @keyframes esmeralda-hover{
     0%{
-        transform: rotate($esmeralda_posicion2) scale(1);
+        transform: rotate($esmeralda_posicion4) scale(1);
     }
     100%{
-        transform: rotate($esmeralda_posicion3) scale(1);
+        transform: rotate($esmeralda_posicion5) scale(1);
     }
 
 }
