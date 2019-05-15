@@ -12,9 +12,10 @@
 	</g>
 	<g id="boton_1_" transform="translate(-427.199 -347)">
 		<g id="Elipse_16_1_">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="468.0981" y1="387.8993" x2="636.2995" y2="556.1007">
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1322.498" y1="2571.8999" x2="1490.698" y2="2740.1001" gradientTransform="matrix(1 0 0 1 -854.398 -2184)">
 				<stop  offset="0" style="stop-color:#5500FF"/>
-				<stop  offset="1" style="stop-color:#00F6FF"/>
+				<stop  offset="1" style="stop-color:#00A99D"/>
 			</linearGradient>
 			<path class="st1" d="M552.2,591c-65.6,0-119-53.4-119-119s53.4-119,119-119s119,53.4,119,119S617.8,591,552.2,591z M552.2,355
 				c-64.5,0-117,52.5-117,117s52.5,117,117,117s117-52.5,117-117S616.7,355,552.2,355z"/>

@@ -11,9 +11,10 @@
 		<circle id="Elipse_16" class="st0" cx="552.2" cy="472" r="125"/>
 	</g>
 	<g id="boton_1_" transform="translate(-427.199 -347)">
-		<linearGradient id="Elipse_16_2_" gradientUnits="userSpaceOnUse" x1="468.0588" y1="387.8598" x2="636.3392" y2="556.1402">
+		
+			<linearGradient id="Elipse_16_2_" gradientUnits="userSpaceOnUse" x1="895.2533" y1="211.1457" x2="1063.5447" y2="42.8543" gradientTransform="matrix(1 0 0 -1 -427.199 599)">
 			<stop  offset="0" style="stop-color:#5500FF"/>
-			<stop  offset="1" style="stop-color:#00F6FF"/>
+			<stop  offset="1" style="stop-color:#0000B7"/>
 		</linearGradient>
 		<circle id="Elipse_16_1_" class="st1" cx="552.2" cy="472" r="118"/>
 	</g>
