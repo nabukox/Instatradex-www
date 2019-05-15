@@ -7162,6 +7162,14 @@ a {
 .bg_8 {
   background-image: url("../img/bg_8.jpg"); }
 
+.align-item-end {
+  display: flex;
+  align-items: flex-end; }
+
+.less-padding-20 {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
 .containerProfits {
   display: flex;
   justify-content: center;
