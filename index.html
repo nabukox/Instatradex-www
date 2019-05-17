@@ -98,9 +98,9 @@
 
 						<br class="hide--lg">
 
-						<ul id="top-bar__subnavigation">
-							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">Login</a></li>
+						<ul id="top-bar__subnavigation">							
 							<li><a href="#">Sign up</a></li>
+							<li><a class="custom-btn custom-btn--small custom-btn--style-3" href="#">Trade Now</a></li>
 						</ul>
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 											Crypterium is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 											TEST Crypterium is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -167,7 +167,7 @@
 											TEST Crypterium is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -188,7 +188,7 @@
 											Invest in your future, control the world.
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -209,7 +209,7 @@
 											Invest in your future, control the world.
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -230,7 +230,7 @@
 											Invest in your future, control the world.
 										</p><br>
 
-										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Discover</a>
+										<a class="custom-btn custom-btn--medium custom-btn--style-2" data-animation="animated fadeInLeft" href="#">Start Trading</a>
 									</div>
 								</div>
 							</div>
@@ -247,7 +247,48 @@
 
 		<!-- start main -->
 		<main role="main">		
-
+			<!-- start section -->
+			<section class="section section--no-pt section--no-pb">
+					<div class="grid">
+						<div class="row">
+							<!-- edit this widget
+	
+								https://www.cryptocompare.com/dev/widget/wizard/?type=12&theme=1&custom=%257B%2522General%2522%253A%257B%2522background%2522%253A%2522%2523000%2522%252C%2522priceText%2522%253A%2522%2523fff%2522%252C%2522enableMarquee%2522%253Atrue%257D%252C%2522Currency%2522%253A%257B%2522color%2522%253A%2522%2523fff%2522%257D%257D&fsyms=BTC,ETH,XMR&tsyms=CNY,GOLD,KRW,USD,EUR
+							-->
+	
+							<script type="text/javascript">
+								baseUrl = "https://widgets.cryptocompare.com/";
+								var scripts = document.getElementsByTagName("script");
+								var embedder = scripts[scripts.length - 1];
+								var cccTheme = {
+										"General": {
+											"background": "#000",
+											"priceText": "#fff",
+											"enableMarquee": true
+										},
+										"Currency": {
+											"color": "#fff"
+										}
+								};
+								(function() {
+									var appName = encodeURIComponent(window.location.hostname);
+									if (appName == "") {
+										appName = "local";
+									}
+									var s = document.createElement("script");
+									s.type = "text/javascript";
+									s.async = true;
+									var theUrl = baseUrl + 'serve/v3/coin/header?fsyms=BTC,ETH,XMR&tsyms=CNY,GOLD,KRW,USD,EUR';
+									s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+									embedder.parentNode.appendChild(s);
+								})();
+							</script>
+	
+							<style type="text/css">#marquee-inner { padding: 30px 0; }</style>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
 				<section class="section">
 						<div class="grid grid--container">
 								<crypto-slider>
@@ -259,15 +300,16 @@
 
 			<!-- primera parte BBLOQUE BLANCO start section section--no-pt -->
 			<section id="company" class="section bg_chart_gray">
+				
 				<div class="grid grid--container">
 					
 						
 						<!--part 1-->
 						<div data-aos="fade-left" data-aos-delay="150">
 								<div class="section-heading section-heading--center  col-MB-60">
-									<h5 class="__subtitle">Our mission</h5>
+									
 
-									<h2 class="__title">InstaTradex Awesome Service that Works for You!</h2>
+									<h2 class="__title">What is Instatradex</h2>
 								</div>
 									
 								<div class="row row--xs-middle text--center">
@@ -278,7 +320,7 @@
 												<br><br>
 													Our Trading is handle by a team of 27 top traders and combine with our insta(AI) proprietary algorithm system. Insta (AI) operates under the supervision of our analyst traders and our compliance team.</p>
 										<p class="row row--xs-middle">
-													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Discover</a>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Trade Now</a>
 										</p>
 									</div>
 								</div>
@@ -299,51 +341,53 @@
             <!-- seccion SUCCES -->
             
             <div class="section bg_gradient_gray">
-                <div class="row row--md-center ">
+                <div class="grid grid--container">
+						<div class="row row--md-center " data-aos="fade-up" data-aos-delay="150">
 
-                    <div class="col col--md-7 col--lg-6">
-                            <div class="content-grid " style="max-width:40em; margin-left: auto;">
-                                <div data-aos="fade-right" data-aos-delay="150" class="aos-init aos-animate">
-                                    <div class="section-heading  col-MB-30">
-                                        <h2 class="__title">InstaTradex Success</h2>
-                                    </div>
-
-                                    <p>
-                                        To confidently secure the long-term growth of our clients portfolio and revolutionize the Financial Educational Industry, with instaTradex business system we can now share the vision with millions of people all over the world and empower them with knowledge and financial growth.
-                                    </p>
-
-                                    <div class="content-container col-MB-35">
-										<div class="__itemprofits">Knowledge</div>
-										<div class="__itemprofits">Wealth</div>
-										<div class="__itemprofits">Empowerment</div>
-                                       
-                                    </div>
-
-                                    <p>
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Discover</a>
-                                    </p>
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="col hide--md col-MB-40"></div>
-
-                    <div class="col col--md-5 col--lg-6 text--left">
-                        <img class="img-responsive center-block" src="img/success@2x.png" alt="demo">
-                    </div>
-
-                    
+								<div class="col col--md-7 col--lg-6">
+										<div class="content-grid " style="max-width:40em; margin-left: auto;">
+											<div data-aos="fade-right" data-aos-delay="150" class="aos-init aos-animate">
+												<div class="section-heading  col-MB-30">
+													<h2 class="__title">InstaTradex</h2>
+												</div>
+			
+												<p>
+													To confidently secure the long-term growth of our clients portfolio and revolutionize the Financial Educational Industry, with instaTradex business system we can now share the vision with millions of people all over the world and empower them with knowledge and financial growth.
+												</p>
+			
+												<div class="content-container col-MB-35">
+													<div class="__itemprofits">Knowledge</div>
+													<div class="__itemprofits">Wealth</div>
+													<div class="__itemprofits">Empowerment</div>
+												   
+												</div>
+			
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Trade Now</a>
+												</p>
+											</div>
+										</div>
+								</div>
+			
+								<div class="col hide--md col-MB-40"></div>
+			
+								<div class="col col--md-5 col--lg-6 text--left" data-aos="fade-up" data-aos-delay="250">
+									<img class="img-responsive center-block" src="img/success@2x.png" alt="demo">
+								</div>
+			
+								
+							</div>
 				</div>
 				
             </div>
 			
 			<!-- start section CIRCLE OF PROFITS-->
-			<section id="howitwork" class="section p-t-50">
+			<section id="howitwork" class="section  bg_electro">
 				<div class="grid grid--container">
 					<div class="section-heading section-heading--center  ">
-						<h5 class="__subtitle">How it Works</h5>
+						<h5 class="__subtitle" data-aos="fade-up" data-aos-delay="150">How it Works</h5>
 
-						<h2 class="__title">Circle of Profits</h2>
+						<h2 class="__title" data-aos="fade-up" data-aos-delay="250">Circle of Profits</h2>
 					</div>
 
 					</div>
@@ -377,7 +421,7 @@
 												<img src="img/ico/bitcoin_hand.svg" width="60" alt="Customer">
 												<span>Customer</span>
 												<div class="profit1" id="profit1">
-													<span>Profits 1</span>
+													<span>Profits</span>
 												</div>
 												<div class="profit2" id="profit1">
 													<span>Profits</span>
@@ -416,28 +460,28 @@
 									<div class=" text--center text--sm-left">
 										<div class="__inner">
 											<div class="row row--md-middle row--md-center col-MB-60">
-													<div class="col col--lg-5 col--md-6 col--xs-12">
-															<div class="__itemprofits">
-																
-																Trading and Forex
-															</div>
-															<div class="__itemprofits">
-																	
-																	Arbitration in Cryptocurrency
-															</div>
-															<div class="__itemprofits">
-																	
-																	Cryptocurrency Mining
-															</div>
+													<div class="col col--lg-5 col--md-6 col--xs-12" data-aos="fade-left" data-aos-delay="150">
+														<div class="__itemprofits">
+															
+															Trading and Forex
 														</div>
+														<div class="__itemprofits">
+																
+																Arbitration in Cryptocurrency
+														</div>
+														<div class="__itemprofits">
+																
+																Cryptocurrency Mining
+														</div>
+													</div>
 													
 													<div class="col-MB-30"></div>
 
-													<div class="col col--lg-7 col--md-6 col--xs-12 ">
-															<h3>AI algorithm</h3>
-															<p>  Our insta (AI) proprietary algorithm Platform uses an automated trading system design to make multiple high speed micro-transactions that yields profits for customers 	based on consistent results with our system by combining Forex (MetaTrader4), crypto arbitrage and perpetual Bitcoin contracts. 
-															</p>
-														</div>
+													<div class="col col--lg-7 col--md-6 col--xs-12 " data-aos="fade-right" data-aos-delay="350">
+														<h3>AI algorithm</h3>
+														<p>  Our insta (AI) proprietary algorithm Platform uses an automated trading system design to make multiple high speed micro-transactions that yields profits for customers 	based on consistent results with our system by combining Forex (MetaTrader4), crypto arbitrage and perpetual Bitcoin contracts. 
+														</p>
+													</div>
 													
 											</div>
 											
@@ -453,10 +497,7 @@
 			<!-- end section -->
 
 			<!-- start section -->
-			<section class="section jarallax less-padding-20" data-speed="0.5">
-					<img class="jarallax-img" src="img/bg_8.jpg" alt="demo" />
-	
-					<div class="pattern" style="background-color: rgba(0, 0, 0, 0.53);"></div>
+			<section class="section less-padding-20 bg_06" >
 	
 					<div class="container">						
 	
@@ -467,15 +508,14 @@
 									<div class="__inner">
 										<div class="row row--xs-between">
 											<!-- start item -->
-											<div class="col col--lg-3 section-heading--white align-item-end">
-												<div class="__item ">
-														<h2 class="__title">Why InstaTradex.com?</h2>
-												</div>
+											<div class="col col--lg-3 section-heading--white align-item-center text-md-center justify-content-center" data-aos="fade-up" data-aos-delay="150">
+													<h2 class="__title text-md-center"><span style="color:#26de81" > Why</span> InstaTradex.com?</h2>
+												
 											</div>
 											<!-- end item -->
 	
 											<!-- start item -->
-											<div class="col col--lg-2 ">
+											<div class="col col--lg-2 col--md-4" data-aos="fade-up" data-aos-delay="350">
 												<div class="__item" style="text-align:center;">
 													<img src="img/ico/devices.svg" width="70" alt="" >
 													<p>Simple and intuitive platform</p>
@@ -484,7 +524,7 @@
 											<!-- end item -->
 	
 											<!-- start item -->
-											<div class="col col--lg-2 ">
+											<div class="col col--lg-2 col--md-4" data-aos="fade-up" data-aos-delay="550">
 												<div class="__item" style="text-align:center;">
 													<img src="img/ico/investment.svg" width="70" alt="">
 													<p>10-20% Affiliate program</p>
@@ -492,7 +532,7 @@
 											</div>
 											<!-- end item -->
 											<!-- start item -->
-											<div class="col col--lg-2 ">
+											<div class="col col--lg-2 col--md-4" data-aos="fade-up" data-aos-delay="750">
 													<div class="__item" style="text-align:center;">
 														<img src="img/ico/graph.svg" width="70" alt="" >
 														<p>Automatic Trading</p>
@@ -500,10 +540,8 @@
 												</div>
 												<!-- end item -->
 												<!-- start item -->
-											<div class="col col--lg-3 align-item-end justify-content-center">
-													<div class="__item">
-														<p><a href="#" class="custom-btn custom-btn--medium custom-btn--style-3  col-MB-20">Start Trading</a></p>
-													</div>
+											<div class="col col--lg-3 justify-content-center align-item-center" data-aos="fade-up" data-aos-delay="950">
+													<a href="#" class="custom-btn custom-btn--medium custom-btn--style-3  col-MB-20">Start Trading</a>
 												</div>
 												<!-- end item -->
 										</div>
@@ -562,7 +600,7 @@
 							</div>
 						</div>
 
-						<div class="col col--md-6 col--lg-7 col--xl-7 col--xl-offset-1">
+						<div class="col col--md-6 col--lg-7 col--xl-7 col--xl-offset-1" data-aos="fade-left" data-aos-delay="350">
 							<!-- start feature -->
 							<div class="feature feature--style-1 feature--slider  text--center text--sm-left"
 								data-slick='{
@@ -673,7 +711,17 @@
 			
 			
 			<!-- end section -->
-			
+			<!-- SECCION MUCKUP DE METATRADER 4 -->
+			<div class="section">
+				<div class="grid grid--container">
+					<div class="row--md-middle row--md-center">
+						<div class="col col--lg-10" data-aos="fade-up" data-aos-delay="150">
+							<img src="img/trade4.png" alt="" >
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end section  -->
 			<!-- start section it academy-->
 			<section id="services" class="section section--base-bg bg_itacademy ">
 				<div class="grid grid--container">
@@ -706,12 +754,11 @@
 
 			
 			<!-- start section ROAD MAP-->
-			<section class="section">
+			<section class="section bg_electro ">
 				<div class="grid grid--container">
-					<div class="section-heading section-heading--center  col-MB-60">
-						<h5 class="__subtitle">Our special way</h5>
+					<div class="section-heading section-heading--center  col-MB-60">						
 
-						<h2 class="__title">Crypterium Road Map</h2>
+						<h2 class="__title">InstaTradex Road Map</h2>
 					</div>
 
 					<div class="row row--xs-middle">
@@ -967,9 +1014,7 @@
 									<h2 class="__title">Awesome App which Works for Your Business!</h2>
 								</div>
 
-								<p class="col-MB-35">
-									Despite some naming, syntactic, and standard library similarities, JavaScript and Java are otherwise unrelated and have very different semantics.
-								</p>
+							
 
 								
 							</div>

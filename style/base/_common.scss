@@ -29,8 +29,14 @@ body
 		family: -apple-system, BlinkMacSystemFont, $base-fontFamily;
 		weight: 400;
 	};
-	color: rgb(136, 138, 139);
-	background-color: $white-color;
+	color: $dark-gray;
+	background:  url(../img/bg_electro.png), #fefffe;
+	
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	min-height: 100vh;
 	overflow-x: hidden;
 

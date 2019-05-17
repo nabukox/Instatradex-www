@@ -1,0 +1,28 @@
+@media screen and(max-width:991px){
+	
+	.align-item-end{
+		justify-content: center;
+	}
+    .bg_itacademy{
+        background-image:linear-gradient(#F5F5F5, #FFFFFF);
+        
+    }
+    .text-md-center{
+        text-align: center;
+        margin-bottom: 2rem!important;
+    }
+}
+//IT ACADEMY
+
+@media screen and(max-width:1520px) and(min-width:992px){
+    .bg_itacademy{
+    background-image: url("../img/bg_itacademy_responsive.png"), linear-gradient(#F5F5F5, #FFFFFF);
+    
+}
+
+
+}
+
+@media only screen and (max-width: 768px){
+   
+}

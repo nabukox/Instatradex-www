@@ -3144,8 +3144,13 @@ body {
   font-size: 1.8rem;
   font-family: -apple-system, BlinkMacSystemFont, "Catamaran", sans-serif;
   font-weight: 400;
-  color: #888a8b;
-  background-color: #fff;
+  color: #202020;
+  background: url(../img/bg_electro.png), #fefffe;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden;
   display: flex;
@@ -3461,7 +3466,7 @@ h5, .h5,
 h6, .h6 {
   line-height: 1.2;
   font-weight: 700;
-  color: #404040;
+  color: #202020;
   margin-top: 20px;
   margin-bottom: 20px;
   -webkit-transition: color 0.3s ease-in-out;
@@ -3499,7 +3504,7 @@ h6, .h6 {
     color: #fff; }
 
 h1, .h1 {
-  font-size: 4.5rem; }
+  font-size: 3.8rem; }
   @media only screen and (min-width: 560px) {
     h1, .h1 {
       font-size: 5.5rem; } }
@@ -3508,7 +3513,7 @@ h1, .h1 {
       font-size: 7rem; } }
 
 h2, .h2 {
-  font-size: 3.5rem; }
+  font-size: 3rem; }
   @media only screen and (min-width: 560px) {
     h2, .h2 {
       font-size: 4rem; } }
@@ -7028,10 +7033,14 @@ html {
   margin-top: 4px; }
 
 a {
-  color: #42B748; }
+  color: #26de81; }
 
-.p-t-50 {
-  padding-top: 50px !important; }
+.align-item-center {
+  display: flex;
+  align-items: center; }
+
+.h1.__title {
+  font-size: 50px; }
 
 .bg_chart_gray {
   background-image: url("../img/bg_chart_gray@2x.png");
@@ -7039,13 +7048,20 @@ a {
   background-repeat: no-repeat; }
 
 .bg_gradient_gray {
-  background-image: linear-gradient(#F5F5F5, #FFFFFF); }
+  background-image: linear-gradient(#F5F5F5, #FFFFFF);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+
+.bg_06 {
+  background-image: url("../img/bg_06.jpg");
+  background-position: top;
+  background-size: cover;
+  background-position: center; }
 
 .__item_cuadro {
   min-height: 476px; }
 
 .section--custom-01 {
-  background-image: url("../img/bg_2.jpg");
+  background-image: url("../img/bg_2.jpg"), #00A99D;
   background-position: top;
   background-size: cover; }
 
@@ -7083,11 +7099,13 @@ a {
 .bg_itacademy {
   background-image: url("../img/bg_itacademy@2x.png"), linear-gradient(#F5F5F5, #FFFFFF);
   background-position: right top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 1px 1px 20px #0000004d; }
 
 /*bloque numeros*/
 .facts .num {
-  color: #42B748; }
+  color: #26de81; }
 
 /*FONDO DE EDIFICIOS*/
 .bg_edificios {
@@ -7131,16 +7149,28 @@ a {
   text-align: justify; }
 
 .timeline .__item--active .__point {
-  border-color: #42B748; }
+  border-color: #26de81; }
 
 .timeline .__item--active .__point {
-  border-color: #42B748; }
+  border-color: #26de81; }
   .timeline .__item--active .__point:before {
-    border-color: #42B748;
-    background-color: #42B748; }
+    border-color: #26de81;
+    background-color: #26de81; }
 
 .timeline .__line--active {
-  background-color: #42B748; }
+  background-color: #26de81; }
+
+/*
+.bg_electro   {
+    background-image: url(../img/bg_electro.png);
+	background-position: top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+*/
+.p-t-50 {
+  padding-top: 50px !important; }
 
 .__itemprofits {
   margin-bottom: 2rem;
@@ -7167,15 +7197,23 @@ a {
   align-items: flex-end; }
 
 .less-padding-20 {
-  padding-top: 80px;
-  padding-bottom: 100px; }
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.company-contacts .__title {
+  font-size: 32px; }
+
+.company-contacts p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px; }
 
 .containerProfits {
   display: flex;
   justify-content: center;
   align-items: center; }
   .containerProfits p {
-    color: #40404b;
+    color: #202020;
     position: absolute;
     bottom: 0;
     margin-bottom: -20%;
@@ -7250,9 +7288,9 @@ a {
     height: 152px;
     right: 0;
     border-radius: 50%;
-    border: 1px solid #42B748;
+    border: 1px solid #26de81;
     background: white;
-    color: #42B748;
+    color: #26de81;
     transform: translate(-205.5px, 274px); }
     .circulos .cverde .profit1 {
       font-size: 1.2rem;
@@ -7263,10 +7301,10 @@ a {
       position: absolute;
       right: 25px;
       top: -25px;
-      color: #42B748;
+      color: #26de81;
       height: 50px;
       width: 50px;
-      border: 1px solid #42B748;
+      border: 1px solid #26de81;
       background: white; }
     .circulos .cverde .profit2 {
       font-size: 1.2rem;
@@ -7277,10 +7315,10 @@ a {
       position: absolute;
       left: 5px;
       bottom: -25px;
-      color: #42B748;
+      color: #26de81;
       height: 50px;
       width: 50px;
-      border: 1px solid #42B748;
+      border: 1px solid #26de81;
       background: white; }
   .circulos .cverde-animado {
     animation-name: cuadro-verde;
@@ -7488,51 +7526,15 @@ a {
   100% {
     transform: translate(91.5px, 91.5px) scale(1); } }
 
-html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+@media screen and (max-width: 991px) {
+  .align-item-end {
+    justify-content: center; }
+  .bg_itacademy {
+    background-image: linear-gradient(#F5F5F5, #FFFFFF); }
+  .text-md-center {
+    text-align: center;
+    margin-bottom: 2rem !important; } }
 
-canvas {
-  display: block;
-  vertical-align: bottom; }
-
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold; }
-
-.js-count-particles {
-  font-size: 1.1em; }
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px; }
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden; }
-
-.count-particles {
-  border-radius: 0 0 3px 3px; }
-
-/* ---- particles.js container ---- */
-#blockchain {
-  width: 100%;
-  height: 100%;
-  background-color: #2E3192;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat; }
+@media screen and (max-width: 1520px) and (min-width: 992px) {
+  .bg_itacademy {
+    background-image: url("../img/bg_itacademy_responsive.png"), linear-gradient(#F5F5F5, #FFFFFF); } }

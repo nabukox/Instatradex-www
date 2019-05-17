@@ -18,11 +18,18 @@ html {
 a{
 	color:$secondary-color;
 }
-
-.p-t-50{
-	padding-top: 50px!important;
-	
+.align-item-center{
+	display: flex;
+	align-items: center;
 }
+
+
+//-----------SLIDE
+.h1.__title{
+	font-size: 50px;
+}
+
+//---------------
 //---------------
 
 .bg_chart_gray{
@@ -33,16 +40,25 @@ a{
 
 .bg_gradient_gray{
 	background-image: linear-gradient(#F5F5F5, #FFFFFF);
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
 }
 
 // -----------------------BLOQUE DE BLOCKCHAIN
+
+.bg_06{
+	background-image: url("../img/bg_06.jpg");
+	
+	background-position: top;
+	background-size: cover;
+	background-position: center;
+}
 .__item_cuadro {
     min-height: 476px;
 }
 
 
 .section--custom-01{
-	background-image: url("../img/bg_2.jpg");
+	background-image: url("../img/bg_2.jpg") , #00A99D;
 	background-position: top;
 	background-size: cover;
 }
@@ -94,7 +110,8 @@ a{
 	background-image: url("../img/bg_itacademy@2x.png") , linear-gradient(#F5F5F5, #FFFFFF);
 	background-position: right top;
 	background-repeat: no-repeat;
-	//background-size: ;
+	background-size: contain;
+	box-shadow: 1px 1px 20px #0000004d;
 }
 
 /*bloque numeros*/
@@ -189,8 +206,23 @@ a{
 .timeline .__line--active{
 	background-color: $secondary-color;
 }
-
+/*
+.bg_electro   {
+    background-image: url(../img/bg_electro.png);
+	background-position: top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+*/
 //CIRCLE OF PROFITS
+
+.p-t-50{
+	padding-top: 50px!important;
+	
+}
+
+
 .__itemprofits{
 	margin-bottom: 2rem;
 	padding-left: 4rem;
@@ -222,6 +254,17 @@ a{
     align-items: flex-end;
 }
 .less-padding-20{
-	padding-top: 80px;
-    padding-bottom: 100px;
+	padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.company-contacts {
+	.__title{
+		font-size: 32px;
+	}
+	p{
+		font-size: 16px;
+		font-weight: normal;
+		letter-spacing: 1px;
+	}
 }
