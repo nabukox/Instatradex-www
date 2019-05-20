@@ -4922,7 +4922,7 @@ label {
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
-    min-height: 20vh;
+    min-height: 35vh;
     padding-top: 80px; }
     #start-screen .start-screen__content__inner {
       display: flex;
@@ -5170,7 +5170,7 @@ label {
       border-width: 12px 0 12px 12px; }
 
 .start-screen__slider .start-screen__content__inner {
-  min-height: 500px; }
+  min-height: 300px; }
 
 .start-screen__slider .slick-dots {
   position: absolute;
