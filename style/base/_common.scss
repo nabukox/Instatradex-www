@@ -30,11 +30,11 @@ body
 		weight: 400;
 	};
 	color: $dark-gray;
-	background:  url(../img/bg_electro.png), #fefffe;
+	background:  url(../img/bg_electro.jpg), #fefffe;
 	
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-height: 100vh;

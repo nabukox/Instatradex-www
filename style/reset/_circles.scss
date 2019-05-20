@@ -89,7 +89,7 @@ $forex-posicion-2 : $mg1;
         color: white;
         position: absolute;
         background: $terciary-color;
-        padding: 1rem 1rem;
+        padding: 1rem 2.2rem;
         transform:translate(0, $crypto-posicion-1);
         border-radius: 50%;
         
@@ -107,7 +107,7 @@ $forex-posicion-2 : $mg1;
         color: white;
         position: absolute;
         background: $cuaternary-color ;
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         transform:translate(0, $forex-posicion-1);
         border-radius: 50%;
         z-index: 1000;
