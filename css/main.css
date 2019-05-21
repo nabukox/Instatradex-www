@@ -5170,7 +5170,7 @@ label {
       border-width: 12px 0 12px 12px; }
 
 .start-screen__slider .start-screen__content__inner {
-  min-height: 300px; }
+  min-height: 30vh; }
 
 .start-screen__slider .slick-dots {
   position: absolute;
@@ -5181,20 +5181,28 @@ label {
     background-color: #541079; }
 
 @media only screen and (min-width: 380px) {
+  .start-screen__slider .start-screen__content__inner {
+    min-height: 85vh; }
+  .start-screen__slider .TypeIt {
+    text-align: center; }
+  .start-screen__slider .text-slide-mobile {
+    text-align: center; }
   .start-screen--style-4 .countdown .countdown-value {
     font-size: 4.5rem; } }
 
 @media only screen and (min-width: 560px) {
-  .start-screen--style-1 .facts .__inner,
-  .start-screen--style-1 .facts .__item {
+  .start-screen--style-6 .facts .__inner,
+  .start-screen--style-6 .facts .__item {
     margin-bottom: 0; }
-  .start-screen--style-4 .countdown .countdown-value {
+  .start-screen--style-6 .countdown .countdown-value {
     font-size: 5.5rem; }
-  .start-screen--style-5 .__title {
+  .start-screen--style-6 .__title {
     font-size: 5rem; } }
 
 @media only screen and (min-width: 768px) {
-  .start-screen--style-4 .countdown .countdown-value {
+  .start-screen__slider .start-screen__content__inner {
+    min-height: 30vh; }
+  .start-screen--style-6 .countdown .countdown-value {
     font-size: 6rem; } }
 
 @media only screen and (min-width: 992px) {
@@ -5204,6 +5212,16 @@ label {
       padding: 50px 0; }
   #start-screen .sales {
     padding: 40px; } }
+
+@media only screen and (min-width: 1200px) {
+  .start-screen__content__inner {
+    min-height: 100vh; }
+    .start-screen__content__inner .text-slide-mobile {
+      margin-left: 10%; }
+    .start-screen__content__inner .TypeIt {
+      text-align: left; }
+    .start-screen__content__inner .text-slide-mobile {
+      text-align: left; } }
 
 /* --------------------------------
    intro
@@ -7051,6 +7069,9 @@ a {
 .p-b-10 {
   padding-bottom: 10px !important; }
 
+.linea-separador {
+  border: 1px solid #d9d9d9; }
+
 .h1.__title {
   font-size: 50px; }
 
@@ -7547,3 +7568,7 @@ a {
 @media screen and (max-width: 1520px) and (min-width: 992px) {
   .bg_itacademy {
     background-image: url("../img/bg_itacademy_responsive.png"), linear-gradient(#F5F5F5, #FFFFFF); } }
+
+@media only screen and (max-width: 768px) {
+  .col-MB-md-60 {
+    margin-bottom: 60px; } }

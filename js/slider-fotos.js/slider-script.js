@@ -1,8 +1,8 @@
 // $('#bootstrap-touch-slider').bsTouchSlider();
 const options = {
-    speed: 100,
+    speed: 50,
     cursor: false,
-    startDelay: 50,
+    startDelay: 20,
 };
 let Instances = new TypeIt('.TypeIt', options);
 Instances.go();
@@ -29,12 +29,12 @@ $('.start-screen__slider').on('beforeChange', function(event, slick, currentSlid
     Instances.reset().freeze();
     setTimeout(() => {
         Instances.unfreeze();
-    }, 900);
+    }, 500);
 });
 
 $('.start-screen__slider').on('swipe', function(event, slick, direction){
     Instances.reset().freeze();
     setTimeout(() => {
         Instances.unfreeze();
-    }, 900);
+    }, 500);
 });

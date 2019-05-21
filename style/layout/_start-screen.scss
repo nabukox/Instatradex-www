@@ -422,7 +422,7 @@
 
 .start-screen__slider
 {
-	.start-screen__content__inner { min-height: 300px; }
+	.start-screen__content__inner { min-height: 30vh; }
 
 	.slick-dots
 	{
@@ -443,6 +443,24 @@
 
 @include min-screen(380px)
 {
+
+	
+	.start-screen__slider{
+		
+		.start-screen__content__inner { min-height: 85vh; }
+		
+		.TypeIt{
+			text-align: center;
+		}
+		.text-slide-mobile{
+			text-align: center;
+		}
+		
+	}
+
+
+
+
 	.start-screen--style-4
 	{
 		.countdown
@@ -455,7 +473,10 @@
 
 @include min-screen($sm-width) // 560
 {
-	.start-screen--style-1
+	
+	
+
+	.start-screen--style-6
 	{
 		.facts
 		{
@@ -467,7 +488,7 @@
 		}
 	}
 
-	.start-screen--style-4
+	.start-screen--style-6
 	{
 		.countdown
 		{
@@ -475,7 +496,7 @@
 		}
 	}
 
-	.start-screen--style-5
+	.start-screen--style-6
 	{
 		.__title { font-size: rem-calc(50px) }
 	}
@@ -483,7 +504,15 @@
 
 @include min-screen($md-width) // 768
 {
-	.start-screen--style-4
+
+	.start-screen__slider{
+		.start-screen__content__inner { min-height: 30vh; }
+		
+	}
+	
+
+
+	.start-screen--style-6
 	{
 		.countdown
 		{
@@ -509,5 +538,17 @@
 
 @include min-screen($xl-width) // 1200
 {
-	
+	.start-screen__content__inner { min-height: 100vh; 
+		.text-slide-mobile{
+			margin-left: 10%;
+		}
+		.TypeIt{
+			
+			text-align: left;
+		}
+		.text-slide-mobile{
+			text-align: left;
+		}
+
+	}
 }

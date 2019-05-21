@@ -23,6 +23,9 @@
 
 }
 
-@media only screen and (max-width: 768px){
-   
+@include max-screen($md-width) // 768
+{
+    .col-MB-md-60{
+    margin-bottom: 60px;
+    }
 }
