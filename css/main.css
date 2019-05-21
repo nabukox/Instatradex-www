@@ -7078,7 +7078,7 @@ a {
   padding-bottom: 10px !important; }
 
 .linea-separador {
-  border: 1px solid #d9d9d9;
+  border: 0.5px solid #d9d9d9;
   margin: 2rem 10%; }
 
 .letra-menor {
