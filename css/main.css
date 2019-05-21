@@ -7087,8 +7087,7 @@ a {
   background-repeat: no-repeat; }
 
 .bg_gradient_gray {
-  background-image: linear-gradient(#F5F5F5, #FFFFFF);
-  box-shadow: 0 0 20px rgba(0, 0, 29, 0.5); }
+  background-image: linear-gradient(#F5F5F5, #FFFFFF); }
 
 .bg_06 {
   background-image: url("../img/bg_06.jpg");
