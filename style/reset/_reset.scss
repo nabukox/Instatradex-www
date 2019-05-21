@@ -45,6 +45,12 @@ a{
 .linea-separador{
 	border:1px solid darken($gris-claro, 10);
 }
+.letra-menor{
+	font-size:2.1rem!important;
+}
+.small-text{
+	p{font-size: 1.15rem!important;}
+}
 
 //-----------SLIDE
 .h1.__title{
@@ -271,8 +277,8 @@ a{
     align-items: flex-end;
 }
 .less-padding-20{
-	padding-top: 20px;
-    padding-bottom: 40px;
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .company-contacts {
@@ -284,4 +290,12 @@ a{
 		font-weight: normal;
 		letter-spacing: 1px;
 	}
+}
+
+//semi circulo
+
+.bg_semicirculo{
+	background-image: url('../img/bg_semicirculo.png');
+	background-position: top;
+	background-size: cover;
 }

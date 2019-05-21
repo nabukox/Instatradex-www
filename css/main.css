@@ -7072,6 +7072,12 @@ a {
 .linea-separador {
   border: 1px solid #d9d9d9; }
 
+.letra-menor {
+  font-size: 2.1rem !important; }
+
+.small-text p {
+  font-size: 1.15rem !important; }
+
 .h1.__title {
   font-size: 50px; }
 
@@ -7227,8 +7233,8 @@ a {
   align-items: flex-end; }
 
 .less-padding-20 {
-  padding-top: 20px;
-  padding-bottom: 40px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .company-contacts .__title {
   font-size: 32px; }
@@ -7237,6 +7243,11 @@ a {
   font-size: 16px;
   font-weight: normal;
   letter-spacing: 1px; }
+
+.bg_semicirculo {
+  background-image: url("../img/bg_semicirculo.png");
+  background-position: top;
+  background-size: cover; }
 
 .containerProfits {
   display: flex;
