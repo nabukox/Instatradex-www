@@ -5180,6 +5180,14 @@ label {
   .start-screen__slider .slick-dots .slick-active button {
     background-color: #541079; }
 
+@media only screen and (max-width: 379px) {
+  .start-screen__slider .start-screen__content__inner {
+    min-height: 85vh; }
+  .start-screen__slider .TypeIt {
+    text-align: center; }
+  .start-screen__slider .text-slide-mobile {
+    text-align: center; } }
+
 @media only screen and (min-width: 380px) {
   .start-screen__slider .start-screen__content__inner {
     min-height: 85vh; }
@@ -7138,8 +7146,7 @@ a {
   background-image: url("../img/bg_itacademy@2x.png"), linear-gradient(#F5F5F5, #FFFFFF);
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain;
-  box-shadow: 1px 1px 20px #0000004d; }
+  background-size: contain; }
 
 /*bloque numeros*/
 .facts .num {
@@ -7232,8 +7239,8 @@ a {
   align-items: flex-end; }
 
 .less-padding-20 {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .company-contacts .__title {
   font-size: 32px; }
@@ -7587,4 +7594,8 @@ a {
 
 @media only screen and (max-width: 768px) {
   .col-MB-md-60 {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+  .facts .__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }

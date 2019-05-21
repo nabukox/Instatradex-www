@@ -441,6 +441,21 @@
 	}
 }
 
+@include max-screen(379px){
+	.start-screen__slider{
+		
+		.start-screen__content__inner { min-height: 85vh; }
+		
+		.TypeIt{
+			text-align: center;
+		}
+		.text-slide-mobile{
+			text-align: center;
+		}
+		
+	}
+}
+
 @include min-screen(380px)
 {
 

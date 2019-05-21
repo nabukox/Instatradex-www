@@ -28,4 +28,10 @@
     .col-MB-md-60{
     margin-bottom: 60px;
     }
+
+    .facts .__item{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
