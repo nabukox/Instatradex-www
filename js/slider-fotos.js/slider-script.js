@@ -29,12 +29,12 @@ $('.start-screen__slider').on('beforeChange', function(event, slick, currentSlid
     Instances.reset().freeze();
     setTimeout(() => {
         Instances.unfreeze();
-    }, 500);
+    }, 100);
 });
 
 $('.start-screen__slider').on('swipe', function(event, slick, direction){
     Instances.reset().freeze();
     setTimeout(() => {
         Instances.unfreeze();
-    }, 500);
+    }, 100);
 });
