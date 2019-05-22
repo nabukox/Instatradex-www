@@ -7617,3 +7617,30 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center; } }
+
+@media only screen and (max-width: 560px) {
+  .p-b-10 {
+    padding-bottom: 4rem !important; }
+  .p-t-10 {
+    padding-top: 6rem !important; }
+  .bg_semicirculo {
+    background-position: 50% -120%;
+    background-size: 300%; }
+    .bg_semicirculo .img-semicirculo {
+      width: 100%;
+      margin-bottom: 10px; }
+    .bg_semicirculo .semicirculo-logos {
+      margin-top: 10vh; }
+  .containerProfits-caja {
+    transform: scale(0.5); }
+  .lista-check-mobile .__itemprofits {
+    margin-bottom: 4em;
+    font-weight: bold;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0; }
+    .lista-check-mobile .__itemprofits::before {
+      margin-top: -50px;
+      margin-left: 0; } }

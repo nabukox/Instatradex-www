@@ -35,3 +35,54 @@
     align-items: center;
     }
 }
+
+@include max-screen($sm-width) // 560
+{
+    
+    .p-b-10 {
+        padding-bottom: 4rem !important;
+    }
+    .p-t-10{
+        padding-top: 6rem!important;
+        
+    }
+//parte del muckup
+    .bg_semicirculo{
+        background-position: 50% -120%;
+        background-size: 300%;
+        .img-semicirculo{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .semicirculo-logos{
+            margin-top: 10vh;
+        }
+    }
+    
+//-----------
+//circulo
+    .containerProfits-caja{
+        
+        transform: scale(.5);
+
+    }
+//--------
+//
+    .lista-check-mobile{
+        .__itemprofits {
+        margin-bottom: 4em;
+        font-weight: bold;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        &::before{
+            margin-top: -50px;
+            margin-left: 0;
+        }
+
+        }   
+    }
+}
