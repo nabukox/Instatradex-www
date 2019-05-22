@@ -1,0 +1,251 @@
+$card-width: 250px;
+$card-separation: 8px;
+$button-color: #10cb6c;
+$canvas-height: 120px;
+$card-padding: 16px;
+
+.crypto-slider {
+  text-align: center;
+
+  .crypto-slider-content {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 4 * $card-width + 8 * $card-separation;
+    text-align: initial;
+  }
+
+  .crypto-slider-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'icomoon', sans-serif;
+    font-size: 20px;
+    color: #888;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
+  .crypto-slider-tabs {
+    text-align: center;
+    margin: 0 0 36px 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    li {
+      display: inline-block;
+      margin: 0 0 -1px 0;
+
+      a {
+        display: block;
+        padding: 24px 24px 8px 24px;
+        font-size: 18px;
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+        color: #666;
+        transition: all 0.25s;
+
+        &:hover {
+          border-color: $button-color;
+          color: $button-color;
+        }
+
+        &.active-crypto-tab {
+          border-color: #666;
+        }
+      }
+    }
+  }
+
+  .crypto-slider-content {
+    padding: 10px 0;
+
+    .crypto-slider-card {
+      display: inline-block;
+      width: $card-width;
+      vertical-align: middle;
+      margin: $card-separation;
+      box-shadow: 0 0 22px -16px $button-color;
+      transition: box-shadow 0.25s;
+      border-radius: 4px;
+      background-color: white;
+
+      &:hover {
+        box-shadow: 0 4px 22px -12px $button-color;
+        transition: transform 0.25s;
+        transform: translateY(-10px);
+      }
+
+      .crypto-slider-header {
+        padding: $card-padding;
+
+        .crypto-slider-symbol {
+          font-weight: 600;
+          line-height: 1;
+        }
+
+        .crypto-slider-name {
+          font-size: 14px;
+          line-height: 1;
+        }
+      }
+
+      .crypto-slider-price-panel {
+        padding: $card-padding / 2 $card-padding;
+
+        .crypto-slider-price {
+          font-weight: bold;
+          display: inline-block;
+          width: 50%;
+        }
+
+        .crypto-slider-change {
+          display: inline-block;
+          width: 50%;
+          font-weight: 600;
+          text-align: right;
+
+          .crypto-slider-negative {
+            display: inline-block;
+            vertical-align: middle;
+            color: crimson;
+          }
+
+          .crypto-slider-positive {
+            display: inline-block;
+            vertical-align: middle;
+            color: seagreen;
+          }
+
+          .crypto-slider-neutral {
+            color: darkgray;
+          }
+
+          .crypto-slider-positive::before, .crypto-slider-negative::before {
+            font-family: 'icomoon', sans-serif;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 15px;
+            margin: 0 8px;
+          }
+
+          .crypto-slider-positive::before {
+            content: '\f0d8';
+          }
+
+          .crypto-slider-negative::before {
+            content: '\f0d7';
+          }
+        }
+      }
+
+      .crypto-slider-buttons {
+        padding: 0 $card-padding $card-padding $card-padding;
+
+        .crypto-slider-button {
+          display: inline-block;
+          padding: 0 4px;
+          box-sizing: border-box;
+          width: 50%;
+
+          button {
+            width: 100%;
+            border: none;
+            background-color: $button-color;
+            border-radius: 3px;
+            padding: 3px 0;
+            color: white;
+          }
+        }
+      }
+
+      .crypto-slider-canvas-container {
+        position: relative;
+        padding: 0 $card-padding;
+
+        .crypto-slider-chart {
+          width: $card-width - 2 * $card-padding;
+          height: $canvas-height;
+        }
+
+        &::before, &::after {
+          content: none;
+        }
+
+        &.loading {
+          &::before, &::after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            margin-left: -18px;
+            top: 50%;
+            margin-top: -18px;
+            width: 36px;
+            height: 36px;
+            box-sizing: border-box;
+            border-width: 6px;
+            border-radius: 36px;
+            border-style: solid;
+            border-color: transparent;
+          }
+
+          &::before {
+            border-color: #ddd;
+          }
+
+          &::after {
+            border-top-color: $button-color;
+            animation: rotating 1s linear infinite;
+          }
+        }
+      }
+    }
+  }
+
+  .crypto-slider-pager {
+    text-align: center;
+    margin: 24px 0 0 0;
+
+    .crypto-slider-page {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 6px;
+      width: 11px;
+      height: 11px;
+      background-color: #ddd;
+      margin: 0 4px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $button-color;
+      }
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
