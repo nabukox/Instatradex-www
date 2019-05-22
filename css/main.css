@@ -7276,12 +7276,19 @@ a {
     width: 700px;
     padding: 60px; }
   .containerProfits .ganancias-crypto {
-    color: white;
+    color: #2E3192;
     position: absolute;
-    background: #2E3192;
-    padding: 1rem 2.2rem;
+    background: white;
+    text-align: center;
     transform: translate(0, 0);
     border-radius: 50%;
+    border: 0.5px solid #2E3192;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
     opacity: 0; }
   .containerProfits .ganancias-crypto-animado {
     animation-name: crypto;
@@ -7289,13 +7296,19 @@ a {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
   .containerProfits .ganancias-forex {
-    color: white;
+    color: #00A99D;
     position: absolute;
-    background: #00A99D;
-    padding: 1rem 3rem;
+    background: white;
     transform: translate(0, 0);
     border-radius: 50%;
+    border: 0.5px solid #00A99D;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
     opacity: 0; }
   .containerProfits .ganancias-forex-animado {
     animation-name: forex;
