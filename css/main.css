@@ -7109,7 +7109,7 @@ a {
   background-position: center; }
 
 .__item_cuadro {
-  min-height: 476px; }
+  min-height: 539px !important; }
 
 .section--custom-01 {
   background-image: url("../img/bg_2.jpg");
@@ -7119,7 +7119,7 @@ a {
 .cuadros_features .lazy {
   height: 60px; }
 
-.cuadro_blockchain, .cuadro_bitcoin, .cuadro_mining {
+.cuadro_blockchain, .cuadro_bitcoin, .cuadro_mining, .cuadro_1, .cuadro_2, .cuadro_3, .cuadro_4, .cuadro_5 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
