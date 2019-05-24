@@ -18,9 +18,7 @@ html {
 a{
 	color:$secondary-color;
 }
-.text-shadow{
-	text-shadow: 0 0 3px black;
-}
+
 .align-item-center{
 	display: flex;
 	align-items: center;
@@ -111,7 +109,7 @@ a{
 	background-repeat: no-repeat;
 }
 .cuadro_1{
-	background-image:url("../img/cuadro_blockchain.jpg");	
+	background-image:url('../img/bg_azul.jpg');
 }
 .cuadro_2{
 	background-image:url("../img/background_bitcoin.jpg");
